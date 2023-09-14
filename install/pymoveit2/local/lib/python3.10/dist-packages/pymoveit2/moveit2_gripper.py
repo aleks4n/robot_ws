@@ -1,0 +1,1 @@
+/home/aliihsan/robot_ws/src/pymoveit2/pymoveit2/moveit2_gripper.py

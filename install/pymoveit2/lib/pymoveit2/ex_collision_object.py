@@ -1,0 +1,1 @@
+/home/aliihsan/robot_ws/src/pymoveit2/examples/ex_collision_object.py

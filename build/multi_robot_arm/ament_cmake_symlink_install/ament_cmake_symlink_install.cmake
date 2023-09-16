@@ -310,8 +310,8 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
-# install(DIRECTORY "launch" "config" "urdf" "models" "worlds" "DESTINATION" "share/multi_robot_arm")
-ament_cmake_symlink_install_directory("/home/aliihsan/robot_ws/src/multi_robot_arm" DIRECTORY "launch" "config" "urdf" "models" "worlds" "DESTINATION" "share/multi_robot_arm")
+# install(DIRECTORY "launch" "config" "urdf" "description" "models" "meshes" "worlds" "DESTINATION" "share/multi_robot_arm")
+ament_cmake_symlink_install_directory("/home/aliihsan/robot_ws/src/multi_robot_arm" DIRECTORY "launch" "config" "urdf" "description" "models" "meshes" "worlds" "DESTINATION" "share/multi_robot_arm")
 
 # install(FILES "/home/aliihsan/robot_ws/build/multi_robot_arm/ament_cmake_environment_hooks/multi_robot_arm.dsv" "DESTINATION" "share/multi_robot_arm/environment")
 ament_cmake_symlink_install_files("/home/aliihsan/robot_ws/src/multi_robot_arm" FILES "/home/aliihsan/robot_ws/build/multi_robot_arm/ament_cmake_environment_hooks/multi_robot_arm.dsv" "DESTINATION" "share/multi_robot_arm/environment")

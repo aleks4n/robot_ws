@@ -1,0 +1,6 @@
+Invoking command in '/home/aliihsan/robot_ws/build/pymoveit2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/aliihsan/robot_ws/src/pymoveit2 -DCMAKE_INSTALL_PREFIX=/home/aliihsan/robot_ws/install/pymoveit2
+Invoked command in '/home/aliihsan/robot_ws/build/pymoveit2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/aliihsan/robot_ws/src/pymoveit2 -DCMAKE_INSTALL_PREFIX=/home/aliihsan/robot_ws/install/pymoveit2
+Invoking command in '/home/aliihsan/robot_ws/build/pymoveit2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/aliihsan/robot_ws/build/pymoveit2 -- -j8 -l8
+Invoked command in '/home/aliihsan/robot_ws/build/pymoveit2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/aliihsan/robot_ws/build/pymoveit2 -- -j8 -l8
+Invoking command in '/home/aliihsan/robot_ws/build/pymoveit2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/aliihsan/robot_ws/build/pymoveit2
+Invoked command in '/home/aliihsan/robot_ws/build/pymoveit2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/aliihsan/robot_ws/build/pymoveit2

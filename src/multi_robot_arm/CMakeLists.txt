@@ -16,7 +16,7 @@ set(THIS_PACKAGE_INCLUDE_DEPENDS
   std_msgs
 )
 
-install(DIRECTORY launch config urdf models worlds DESTINATION share/${PROJECT_NAME})
+install(DIRECTORY launch config urdf description models meshes worlds DESTINATION share/${PROJECT_NAME})
 ament_environment_hooks("${CMAKE_CURRENT_SOURCE_DIR}/env-hooks/multi_robot_arm.dsv.in")
 
 ament_package()

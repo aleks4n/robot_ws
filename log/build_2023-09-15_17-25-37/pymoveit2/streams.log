@@ -1,0 +1,9 @@
+[0.015s] Invoking command in '/home/aliihsan/robot_ws/build/pymoveit2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/aliihsan/robot_ws/build/pymoveit2 -- -j8 -l8
+[0.071s] Built target ament_cmake_python_symlink_pymoveit2
+[0.332s] running egg_info
+[0.333s] writing pymoveit2.egg-info/PKG-INFO
+[0.333s] writing dependency_links to pymoveit2.egg-info/dependency_links.txt
+[0.333s] writing top-level names to pymoveit2.egg-info/top_level.txt
+[0.336s] reading manifest file 'pymoveit2.egg-info/SOURCES.txt'
+[0.337s] writing manifest file 'pymoveit2.egg-info/SOURCES.txt'
+[0.360s] Built target ament_cmake_python_build_pymoveit2_egg

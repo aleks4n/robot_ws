@@ -32,7 +32,7 @@ def generate_launch_description():
     name3 = "tb3_2"
     package_path = get_package_share_directory("multi_robot_arm")
     robot_desc_path = os.path.join(get_package_share_directory("multi_robot_arm"), "urdf", "turtlebot3_burger.urdf")
-    urdf_path1 = os.path.join(get_package_share_directory('multi_robot_arm'),'models',model_folder+'_0','model.sdf')
+    urdf_path1 = os.path.join(get_package_share_directory('multi_robot_arm'),'urdf','cloudy_v2.urdf.xacro')
 
     with open(robot_desc_path, 'r') as infp:
        robot_desc = infp.read()
@@ -160,9 +160,9 @@ def generate_launch_description():
         ]
     
     ld.add_action(spawn_robot1)
-    ld.add_action(robot_state_publisher1)
-    ld.add_action(spawn_robot2)
-    ld.add_action(robot_state_publisher2)
+    #ld.add_action(robot_state_publisher1)
+    #ld.add_action(spawn_robot2)
+    #ld.add_action(robot_state_publisher2)
     
     # Multiple ARMs in gazebo must be spawned in a serial fashion due to 
     # a global namespace dependency introduced by ros2_control.

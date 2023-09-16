@@ -1,0 +1,1 @@
+Invoking command in '/home/aliihsan/robot_ws/build/pymoveit2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/aliihsan/robot_ws/build/pymoveit2 -- -j8 -l8

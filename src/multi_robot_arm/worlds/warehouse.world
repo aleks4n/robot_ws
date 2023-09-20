@@ -181,10 +181,10 @@
       <pose>-0.175244 -5.94885 0 0 -0 0</pose>
     </model>
     <state world_name='default'>
-      <sim_time>188 778000000</sim_time>
-      <real_time>8 251084949</real_time>
-      <wall_time>1694248324 481795478</wall_time>
-      <iterations>8420</iterations>
+      <sim_time>271 979000000</sim_time>
+      <real_time>83 677350734</real_time>
+      <wall_time>1695034500 84959579</wall_time>
+      <iterations>83201</iterations>
       <model name='asphalt_plane'>
         <pose>0.253922 0.048964 0 0 -0 0</pose>
         <scale>1 1 1</scale>
@@ -266,43 +266,53 @@
         </link>
       </model>
       <model name='person_walking'>
-        <pose>-5.8304 -0.105301 0.049999 -2e-06 1e-06 0.000845</pose>
+        <pose>-5.83036 -0.105299 0.049999 -2e-06 2e-06 0.001614</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>-5.8304 -0.105301 0.049999 -2e-06 1e-06 0.000845</pose>
+          <pose>-5.83036 -0.105299 0.049999 -2e-06 2e-06 0.001614</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0.945391 1.99638 -2.81429 -2.08243 1.0363 0.103766</acceleration>
-          <wrench>75.6313 159.711 -225.143 0 -0 0</wrench>
+          <acceleration>1.00002 2.11308 -2.49308 -2.11314 1.04347 0.118654</acceleration>
+          <wrench>80.0016 169.046 -199.447 0 -0 0</wrench>
         </link>
       </model>
       <model name='unit_box'>
-        <pose>2.07989 4.15111 0.550002 -4e-06 -0 0.032744</pose>
+        <pose>2.07989 4.1511 0.549999 -2e-06 -0 0.032745</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>2.07989 4.15111 0.550002 -4e-06 -0 0.032744</pose>
+          <pose>2.07989 4.1511 0.549999 -2e-06 -0 0.032745</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0.182918 -5.48331 -0.65614 -1.60011 0.366457 -0.001948</acceleration>
-          <wrench>0.182918 -5.48331 -0.65614 0 -0 0</wrench>
+          <acceleration>-0.368523 11.0107 8.56173 3.11144 -0.736045 0.000762</acceleration>
+          <wrench>-0.368523 11.0107 8.56173 0 -0 0</wrench>
         </link>
       </model>
       <model name='unitboxblue'>
-        <pose>-3.0 3.00114 0.55 0 0 -0.001803</pose>
+        <pose>-3 3.00112 0.549996 9e-06 0 -0.001802</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>-3.0 3.00114 0.55 0 0 -0.001803</pose>
+          <pose>-3 3.00112 0.549996 9e-06 0 -0.001802</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-0.008564 -9.83633 9.83745 0.823076 -0.019399 -0.001257</acceleration>
-          <wrench>-0.008564 -9.83633 9.83745 0 -0 0</wrench>
+          <acceleration>-0.021732 -1.56736 -7.18767 3.13471 -0.043276 -0.000128</acceleration>
+          <wrench>-0.021732 -1.56736 -7.18767 0 -0 0</wrench>
         </link>
       </model>
       <model name='unitboxgreen'>
-        <pose>3.019073 -3.04284 0.549995 -1e-05 -0 0.305502</pose>
+        <pose>3.01907 -3.04284 0.55 0 -0 0.3055</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>3.019073 -3.04284 0.549995 -1e-05 -0 0.305502</pose>
+          <pose>3.01907 -3.04284 0.55 0 -0 0.3055</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 -9.8 0 -0 0</acceleration>
-          <wrench>0 0 -9.8 0 -0 0</wrench>
+          <acceleration>9.10052 2.85704 9.54542 0.5655 -0.648227 -0.001921</acceleration>
+          <wrench>9.10052 2.85704 9.54542 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='warehouse_robot'>
+        <pose>8.38863 8.39581 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>8.38863 8.39581 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='warehousewalls'>
@@ -2013,10 +2023,112 @@
     </model>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose>3.76109 -11.2982 9.56991 -0 0.686081 1.88602</pose>
+        <pose>8.39826 -5.01396 8.20686 -0 0.686081 1.88602</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>
     </gui>
+    <model name='warehouse_robot'>
+      <static>1</static>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://warehouse_robot/meshes/robot.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision_base'>
+          <pose>0 0 0.20437 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.55508 1.0228 0.40874</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <collision name='collision_bumper'>
+          <pose>0 0 0.062205 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.67266 1.17126 0.12441</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <collision name='collision_column_large'>
+          <pose>0 -0.27539 0.43738 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.08652</radius>
+              <length>0.87476</length>
+            </cylinder>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <collision name='collision_column_small'>
+          <pose>0 -0.27539 0.70424 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.04261</radius>
+              <length>1.40848</length>
+            </cylinder>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>8.38863 8.39581 0 0 -0 0</pose>
+    </model>
   </world>
 </sdf>

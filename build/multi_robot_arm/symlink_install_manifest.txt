@@ -1,7 +1,7 @@
 /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/launch/gazebo_arm.launch.py
+/home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/launch/joystick.launch.py
 /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/launch/simple_bot.launch.py
-/home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/config/ball_tracker_params_robot.yaml
-/home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/config/ball_tracker_params_sim.yaml
+/home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/launch/test.launch.py
 /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/config/control.yaml
 /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/config/gaz_ros2_ctl_use_sim.yaml
 /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/config/gazebo_params.yaml
@@ -25,11 +25,13 @@
 /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/config/ur/ur5/ros_controllers_robot.yaml
 /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/config/ur/ur5/visual_parameters.yaml
 /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/urdf/bcr_bot.xacro
+/home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/urdf/bcr_bot_copy.xacro
 /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/urdf/common_properties.urdf
 /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/urdf/diffbot.urdf.xacro
 /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/urdf/diffbot_system.urdf.xacro
 /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/urdf/gazebo.xacro
 /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/urdf/gazebo_control.xacro
+/home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/urdf/gazebo_control_copy.xacro
 /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/urdf/gz.xacro
 /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/urdf/inertial_macros.xacro
 /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/urdf/lidar.xacro
@@ -64,6 +66,7 @@
 /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/meshes/kinect/kinect.jpg
 /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/meshes/kinect/kinect.tga
 /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/meshes/logo.png
+/home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/meshes/logo1.png
 /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/meshes/realsense_texture.png
 /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/meshes/robot_base.stl
 /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/meshes/wheel.stl

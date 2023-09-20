@@ -16,7 +16,7 @@ import os
 from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
 from launch.substitutions import LaunchConfiguration, PathJoinSubstitution, Command
-from launch.actions import DeclareLaunchArgument, ExecuteProcess, RegisterEventHandler
+from launch.actions import DeclareLaunchArgument, ExecuteProcess, RegisterEventHandler, IncludeLaunchDescription
 from launch.event_handlers import OnProcessExit
 from launch.launch_context import LaunchContext
 from launch_ros.actions import Node
@@ -24,6 +24,8 @@ from nav2_common.launch import RewrittenYaml
 import yaml, xacro
 from launch_ros.substitutions import FindPackageShare
 from launch.substitutions import PythonExpression
+from launch.launch_description_sources import PythonLaunchDescriptionSource
+
 
 #https://github.com/bponsler/ros2-support
 
@@ -35,7 +37,7 @@ def generate_launch_description():
     package_path = get_package_share_directory("multi_robot_arm")
     robot_desc_path = os.path.join(get_package_share_directory("multi_robot_arm"), "urdf", "bcr_bot.xacro")
     xacro_path = os.path.join(get_package_share_directory('multi_robot_arm'),'urdf','bcr_bot.xacro')
-    xacro_path1 = os.path.join(get_package_share_directory('multi_robot_arm'),'urdf','bcr_bot.xacro')
+    xacro_path1 = os.path.join(get_package_share_directory('multi_robot_arm'),'urdf','bcr_bot_copy.xacro')
     urdf_path1 = os.path.join(get_package_share_directory('multi_robot_arm'),'urdf','bcr_bot.xacro')
     camera_enabled = LaunchConfiguration("camera_enabled", default=False)
     two_d_lidar_enabled = LaunchConfiguration("two_d_lidar_enabled", default=False)
@@ -163,8 +165,8 @@ def generate_launch_description():
         arguments=[
             '-topic', "/robot_description",
             '-entity', PythonExpression(['"', "bir", '_robot"']), #default enitity name _bcr_bot
-            '-z', "0",
-            '-x', "4",
+            '-z', "0.50",
+            '-x', "0",
             '-y', "0",
             '-Y', "0"
         ]
@@ -181,7 +183,7 @@ def generate_launch_description():
                     ' camera_enabled:=', "False",
                     ' two_d_lidar_enabled:=', "False",
                     ' sim_gazebo:=', "true",
-                    ' odometry_source:=', odometry_source,
+                    ' odometry_source:=', "world",
                     ' robot_namespace:=', "iki",
                     ])}],
         remappings=[
@@ -197,9 +199,9 @@ def generate_launch_description():
         arguments=[
             '-topic', "/robot_description",
             '-entity', PythonExpression(['"aaa', "iki", '_robot"']), #default enitity name _bcr_bot
-            '-z', "0.28",
+            '-z', "0.50",
             '-x', "3",
-            '-y', "3",
+            '-y', "0",
             '-Y', "0"
         ]
     )
@@ -208,6 +210,22 @@ def generate_launch_description():
 
 
 
+    
+
+    joystick = IncludeLaunchDescription(
+                PythonLaunchDescriptionSource([os.path.join(
+                    package_path,'launch','joystick.launch.py'
+                )]), launch_arguments={'use_sim_time': 'true'}.items()
+    )
+
+
+    twist_mux_params = os.path.join(package_path,'config','twist_mux.yaml')
+    twist_mux = Node(
+            package="twist_mux",
+            executable="twist_mux",
+            parameters=[twist_mux_params, {'use_sim_time': True}],
+            remappings=[('/cmd_vel_out','/bir/cmd_vel')]
+        )
 
 
 
@@ -245,10 +263,14 @@ def generate_launch_description():
             # …
         ]
     
+
+    ld.add_action(joystick)
+    ld.add_action(twist_mux)
+    
     ld.add_action(spawn_entity)
     ld.add_action(robot_state_publisher)    
-    #ld.add_action(spawn_entityy)
-    #ld.add_action(robot_state_publisherr)
+    ld.add_action(spawn_entityy)
+    ld.add_action(robot_state_publisherr)
 
     #ld.add_action(spawn_robot2)
     #ld.add_action(robot_state_publisher2)
@@ -257,7 +279,22 @@ def generate_launch_description():
     # a global namespace dependency introduced by ros2_control.
     # robot_final_action is the last action from previous robot and 
     # new robot will only be spawned once previous action is completed
+    
 
+
+    robot_final_action = None
+    for robot in robots:    
+        robot_final_action = spawn_robot(
+            ld,
+            "ur5",
+            robot["name"] ,
+            use_sim_time,
+            robot["x_pose"],
+            robot["y_pose"],
+            robot["z"],
+            robot["Y"],
+            robot_final_action,
+        )
 
     
 

@@ -409,12 +409,12 @@
         <instance_geometry url="#bcr_bot_logo-mesh" name="bcr_bot_logo">
           <bind_material>
             <technique_common>
-              <instance_material symbol="Black-material" target="#Black-material"/>
-              <instance_material symbol="white-material" target="#white-material"/>
+              <instance_material symbol="Black-material" target="#gray-material"/>
+              <instance_material symbol="white-material" target="#gray-material"/>
               <instance_material symbol="glossy_plastic_white-material" target="#glossy_plastic_white-material"/>
-              <instance_material symbol="metallic_gray-material" target="#metallic_gray-material"/>
-              <instance_material symbol="metallic_black-material" target="#metallic_black-material"/>
-              <instance_material symbol="dark_gray-material" target="#dark_gray-material"/>
+              <instance_material symbol="metallic_gray-material" target="gray-material"/>
+              <instance_material symbol="metallic_black-material" target="#gray-material"/>
+              <instance_material symbol="dark_gray-material" target="#gray-material"/>
               <instance_material symbol="gray-material" target="#gray-material"/>
             </technique_common>
           </bind_material>

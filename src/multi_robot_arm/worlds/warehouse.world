@@ -181,10 +181,10 @@
       <pose>-0.175244 -5.94885 0 0 -0 0</pose>
     </model>
     <state world_name='default'>
-      <sim_time>271 979000000</sim_time>
-      <real_time>83 677350734</real_time>
-      <wall_time>1695034500 84959579</wall_time>
-      <iterations>83201</iterations>
+      <sim_time>1156 114000000</sim_time>
+      <real_time>287 917523036</real_time>
+      <wall_time>1695220701 804900372</wall_time>
+      <iterations>285931</iterations>
       <model name='asphalt_plane'>
         <pose>0.253922 0.048964 0 0 -0 0</pose>
         <scale>1 1 1</scale>
@@ -266,44 +266,66 @@
         </link>
       </model>
       <model name='person_walking'>
-        <pose>-5.83036 -0.105299 0.049999 -2e-06 2e-06 0.001614</pose>
+        <pose>-5.82935 -0.105235 0.05 -1e-06 0 0.025113</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>-5.83036 -0.105299 0.049999 -2e-06 2e-06 0.001614</pose>
+          <pose>-5.82935 -0.105235 0.05 -1e-06 0 0.025113</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>1.00002 2.11308 -2.49308 -2.11314 1.04347 0.118654</acceleration>
-          <wrench>80.0016 169.046 -199.447 0 -0 0</wrench>
+          <acceleration>-1.05079 -3.52236 2.40754 -2.62229 -1.55377 0.178745</acceleration>
+          <wrench>-84.0633 -281.789 192.604 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='rwthlogo'>
+        <pose>-3 10.1 1.5 1.55 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-3 10.1 1.5 1.55 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='rwthlogo_0'>
+        <pose>3 10.1 1.5 1.55 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>3 10.1 1.5 1.55 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='unit_box'>
-        <pose>2.07989 4.1511 0.549999 -2e-06 -0 0.032745</pose>
+        <pose>2.07986 4.15109 0.550002 -4e-06 -0 0.032775</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>2.07989 4.1511 0.549999 -2e-06 -0 0.032745</pose>
+          <pose>2.07986 4.15109 0.550002 -4e-06 -0 0.032775</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-0.368523 11.0107 8.56173 3.11144 -0.736045 0.000762</acceleration>
-          <wrench>-0.368523 11.0107 8.56173 0 -0 0</wrench>
+          <acceleration>0.183082 -5.4833 -0.65614 -1.60012 0.366787 -0.001948</acceleration>
+          <wrench>0.183082 -5.4833 -0.65614 0 -0 0</wrench>
         </link>
       </model>
       <model name='unitboxblue'>
-        <pose>-3 3.00112 0.549996 9e-06 0 -0.001802</pose>
+        <pose>-3.00003 3.00113 0.550002 -4e-06 -0 -0.001763</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>-3 3.00112 0.549996 9e-06 0 -0.001802</pose>
+          <pose>-3.00003 3.00113 0.550002 -4e-06 -0 -0.001763</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-0.021732 -1.56736 -7.18767 3.13471 -0.043276 -0.000128</acceleration>
-          <wrench>-0.021732 -1.56736 -7.18767 0 -0 0</wrench>
+          <acceleration>-0.001545 -5.48595 -0.656858 -1.59488 -0.004158 -0.002402</acceleration>
+          <wrench>-0.001545 -5.48595 -0.656858 0 -0 0</wrench>
         </link>
       </model>
       <model name='unitboxgreen'>
-        <pose>3.01907 -3.04284 0.55 0 -0 0.3055</pose>
+        <static>1</static> 
+        <pose>3.01907 -3.04284 0.549999 -5e-06 4e-06 0.30545</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>3.01907 -3.04284 0.55 0 -0 0.3055</pose>
+          <pose>3.01907 -3.04284 0.549999 -5e-06 4e-06 0.30545</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>9.10052 2.85704 9.54542 0.5655 -0.648227 -0.001921</acceleration>
-          <wrench>9.10052 2.85704 9.54542 0 -0 0</wrench>
+          <acceleration>-3.35442 1.74673 -5.34312 2.7925 -0.426112 0.002261</acceleration>
+          <wrench>-3.35442 1.74673 -5.34312 0 -0 0</wrench>
         </link>
+        
       </model>
       <model name='warehouse_robot'>
         <pose>8.38863 8.39581 0 0 -0 0</pose>
@@ -391,8 +413,8 @@
         <link name='link'>
           <pose>7.32644 8.09532 0.098987 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
+          <acceleration>0 0 -0 0 -0 0</acceleration>
+          <wrench>0 0 -0 0 -0 0</wrench>
         </link>
       </model>
       <model name='wood_cube_10cm_clone'>
@@ -401,8 +423,8 @@
         <link name='link'>
           <pose>7.41055 8.42585 0.098987 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 -0 -0 0 -0 0</acceleration>
-          <wrench>0 -0 -0 0 -0 0</wrench>
+          <acceleration>0 -0 0 0 -0 0</acceleration>
+          <wrench>0 -0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='wood_cube_10cm_clone_0'>
@@ -411,8 +433,8 @@
         <link name='link'>
           <pose>7.373 8.73497 0.098987 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 -0 -0 0 -0 0</acceleration>
-          <wrench>0 -0 -0 0 -0 0</wrench>
+          <acceleration>0 -0 0 0 -0 0</acceleration>
+          <wrench>0 -0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='wood_cube_10cm_clone_1'>
@@ -421,8 +443,8 @@
         <link name='link'>
           <pose>6.96372 8.67486 0.098987 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 -0 -0 0 -0 0</acceleration>
-          <wrench>0 -0 -0 0 -0 0</wrench>
+          <acceleration>0 -0 0 0 -0 0</acceleration>
+          <wrench>0 -0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='wood_cube_10cm_clone_2'>
@@ -431,8 +453,8 @@
         <link name='link'>
           <pose>6.96556 8.34309 0.098987 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 -0 -0 0 -0 0</acceleration>
-          <wrench>0 -0 -0 0 -0 0</wrench>
+          <acceleration>0 -0 0 0 -0 0</acceleration>
+          <wrench>0 -0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='wood_cube_10cm_clone_3'>
@@ -441,8 +463,8 @@
         <link name='link'>
           <pose>6.95539 8.05703 0.098987 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
+          <acceleration>0 0 -0 0 -0 0</acceleration>
+          <wrench>0 0 -0 0 -0 0</wrench>
         </link>
       </model>
       <light name='sun'>
@@ -1646,6 +1668,7 @@
       <pose>6.95539 8.05703 0 0 -0 0</pose>
     </model>
     <model name='unit_box'>
+      <static>1</static>
       <link name='link'>
         <inertial>
           <mass>1</mass>
@@ -1748,6 +1771,7 @@
       <pose>1.48503 4.01963 0.5 0 -0 0</pose>
     </model>
     <model name='unitboxgreen'>
+      <static>1</static>
       <link name='link'>
         <inertial>
           <mass>1</mass>
@@ -1850,6 +1874,7 @@
       <pose>-0.714027 -3.19135 0.5 0 -0 0</pose>
     </model>
     <model name='unitboxblue'>
+      <static>1</static>
       <link name='link'>
         <inertial>
           <mass>1</mass>
@@ -2023,7 +2048,7 @@
     </model>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose>8.39826 -5.01396 8.20686 -0 0.686081 1.88602</pose>
+        <pose>5.09217 -15.01 12.1498 0 0.550081 1.68602</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>
@@ -2129,6 +2154,104 @@
         <kinematic>0</kinematic>
       </link>
       <pose>8.38863 8.39581 0 0 -0 0</pose>
+    </model>
+    <model name='rwthlogo'>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>2.5 2.5</size>
+            </plane>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>2.5</mu>
+                <mu2>1.25</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual'>
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>2.5 2.5</size>
+            </plane>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://rwthlogo/materials/scripts</uri>
+              <uri>model://rwthlogo/materials/textures/</uri>
+              <name>RWTHLogo/Image</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>14.2758 -5.7926 0 0 -0 0</pose>
+    </model>
+    <model name='rwthlogo_0'>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>2.5 2.5</size>
+            </plane>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>2.5</mu>
+                <mu2>1.25</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual'>
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>2.5 2.5</size>
+            </plane>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://rwthlogo/materials/scripts</uri>
+              <uri>model://rwthlogo/materials/textures/</uri>
+              <name>RWTHLogo/Image</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>13.7026 7.7017 0 0 -0 0</pose>
     </model>
   </world>
 </sdf>

@@ -35,6 +35,7 @@
 /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/urdf/gz.xacro
 /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/urdf/inertial_macros.xacro
 /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/urdf/lidar.xacro
+/home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/urdf/logotest.xacro
 /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/urdf/macros.xacro
 /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/urdf/materials.xacro
 /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/urdf/omni_drive.urdf.xacro
@@ -57,6 +58,10 @@
 /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/urdf/ur/ur5/ur_macro.xacro
 /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/urdf/ur/ur5/ur_ros2_control.xacro
 /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/urdf/ur/ur5/ur_urdf.xacro
+/home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/models/rwthlogo/materials/scripts/rwthlogo.material
+/home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/models/rwthlogo/materials/textures/logo.png
+/home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/models/rwthlogo/model.config
+/home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/models/rwthlogo/model.sdf
 /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/meshes/arm_base.stl
 /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/meshes/bcr_bot_mesh.dae
 /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/meshes/bicep.stl
@@ -65,7 +70,7 @@
 /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/meshes/kinect/kinect.dae
 /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/meshes/kinect/kinect.jpg
 /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/meshes/kinect/kinect.tga
-/home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/meshes/logo.png
+/home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/meshes/logo.dae
 /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/meshes/logo1.png
 /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/meshes/realsense_texture.png
 /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/meshes/robot_base.stl

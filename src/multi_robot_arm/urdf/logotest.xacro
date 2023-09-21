@@ -237,16 +237,6 @@
 	</joint>
 
 
-<!-- ............................. RWTH LOGO ........................................ -->
-
-	<visual>
-			<origin xyz="0 0 0" rpy="0 0 0" />
-			<geometry>
-				<mesh filename="file://$(find multi_robot_arm)/meshes/logo.dae"/>
-			</geometry>
-			
-	</visual>
-
 
 <!-- ............................. CONVEYOR ........................................ -->
 

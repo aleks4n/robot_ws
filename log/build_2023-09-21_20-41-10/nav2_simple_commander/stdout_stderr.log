@@ -1,0 +1,25 @@
+running develop
+/usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+running egg_info
+creating nav2_simple_commander.egg-info
+writing nav2_simple_commander.egg-info/PKG-INFO
+writing dependency_links to nav2_simple_commander.egg-info/dependency_links.txt
+writing entry points to nav2_simple_commander.egg-info/entry_points.txt
+writing requirements to nav2_simple_commander.egg-info/requires.txt
+writing top-level names to nav2_simple_commander.egg-info/top_level.txt
+writing manifest file 'nav2_simple_commander.egg-info/SOURCES.txt'
+reading manifest file 'nav2_simple_commander.egg-info/SOURCES.txt'
+writing manifest file 'nav2_simple_commander.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/aliihsan/robot_ws/install/nav2_simple_commander/lib/python3.10/site-packages/nav2-simple-commander.egg-link (link to .)
+
+Installed /home/aliihsan/robot_ws/build/nav2_simple_commander
+running install_data
+creating /home/aliihsan/robot_ws/install/nav2_simple_commander/share/ament_index
+creating /home/aliihsan/robot_ws/install/nav2_simple_commander/share/ament_index/resource_index
+creating /home/aliihsan/robot_ws/install/nav2_simple_commander/share/ament_index/resource_index/packages
+copying resource/nav2_simple_commander -> /home/aliihsan/robot_ws/install/nav2_simple_commander/share/ament_index/resource_index/packages
+copying package.xml -> /home/aliihsan/robot_ws/install/nav2_simple_commander/share/nav2_simple_commander

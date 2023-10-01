@@ -1,0 +1,1 @@
+/home/aliihsan/robot_ws/src/multi_robot_arm/nav2folder/example_follow_path.py

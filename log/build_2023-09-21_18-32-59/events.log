@@ -1,0 +1,282 @@
+[0.000000] (-) TimerEvent: {}
+[0.000563] (multi_robot_arm) JobQueued: {'identifier': 'multi_robot_arm', 'dependencies': OrderedDict()}
+[0.000619] (pymoveit2) JobQueued: {'identifier': 'pymoveit2', 'dependencies': OrderedDict()}
+[0.001200] (multi_robot_arm) JobStarted: {'identifier': 'multi_robot_arm'}
+[0.049946] (pymoveit2) JobStarted: {'identifier': 'pymoveit2'}
+[0.064642] (multi_robot_arm) JobProgress: {'identifier': 'multi_robot_arm', 'progress': 'cmake'}
+[0.066217] (multi_robot_arm) JobProgress: {'identifier': 'multi_robot_arm', 'progress': 'build'}
+[0.067677] (multi_robot_arm) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/aliihsan/robot_ws/build/multi_robot_arm', '--', '-j8', '-l8'], 'cwd': '/home/aliihsan/robot_ws/build/multi_robot_arm', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'aliihsan'), ('LC_TIME', 'fr_FR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/aliihsan'), ('OLDPWD', '/home/aliihsan'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'fr_FR.UTF-8'), ('SYSTEMD_EXEC_PID', '1744'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/aliihsan/robot_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'aliihsan'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'aliihsan'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/urdf/ur/meshes'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/aliihsan/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/aliihsan-Latitude-5480:@/tmp/.ICE-unix/1698,unix/aliihsan-Latitude-5480:/tmp/.ICE-unix/1698'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'fr_FR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/0ec7afb9_59ec_40a0_b5e8_b8f9dc223bca'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'fr_FR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.1TYLB2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.1623'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/aliihsan/robot_ws/install/pymoveit2:/home/aliihsan/robot_ws/install/multi_robot_arm:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'fr_FR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'fr_FR.UTF-8'), ('LC_IDENTIFICATION', 'fr_FR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/aliihsan/robot_ws/build/multi_robot_arm'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/aliihsan/robot_ws/install/pymoveit2/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'fr_FR.UTF-8'), ('LC_PAPER', 'fr_FR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/aliihsan/robot_ws/install/pymoveit2:/home/aliihsan/robot_ws/install/multi_robot_arm:/opt/ros/humble')]), 'shell': False}
+[0.074937] (pymoveit2) JobProgress: {'identifier': 'pymoveit2', 'progress': 'cmake'}
+[0.081983] (pymoveit2) JobProgress: {'identifier': 'pymoveit2', 'progress': 'build'}
+[0.082051] (pymoveit2) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/aliihsan/robot_ws/build/pymoveit2', '--', '-j8', '-l8'], 'cwd': '/home/aliihsan/robot_ws/build/pymoveit2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'aliihsan'), ('LC_TIME', 'fr_FR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/aliihsan'), ('OLDPWD', '/home/aliihsan'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'fr_FR.UTF-8'), ('SYSTEMD_EXEC_PID', '1744'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/aliihsan/robot_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'aliihsan'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'aliihsan'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/urdf/ur/meshes'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/aliihsan/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/aliihsan-Latitude-5480:@/tmp/.ICE-unix/1698,unix/aliihsan-Latitude-5480:/tmp/.ICE-unix/1698'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'fr_FR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/0ec7afb9_59ec_40a0_b5e8_b8f9dc223bca'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'fr_FR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.1TYLB2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.1623'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/aliihsan/robot_ws/install/pymoveit2:/home/aliihsan/robot_ws/install/multi_robot_arm:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'fr_FR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'fr_FR.UTF-8'), ('LC_IDENTIFICATION', 'fr_FR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/aliihsan/robot_ws/build/pymoveit2'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/aliihsan/robot_ws/install/pymoveit2/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'fr_FR.UTF-8'), ('LC_PAPER', 'fr_FR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/aliihsan/robot_ws/install/pymoveit2:/home/aliihsan/robot_ws/install/multi_robot_arm:/opt/ros/humble')]), 'shell': False}
+[0.101944] (-) TimerEvent: {}
+[0.205968] (-) TimerEvent: {}
+[0.245528] (multi_robot_arm) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.298174] (pymoveit2) StdoutLine: {'line': b'Built target ament_cmake_python_symlink_pymoveit2\n'}
+[0.306065] (-) TimerEvent: {}
+[0.409962] (-) TimerEvent: {}
+[0.513965] (-) TimerEvent: {}
+[0.617967] (-) TimerEvent: {}
+[0.680011] (multi_robot_arm) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.721950] (-) TimerEvent: {}
+[0.806156] (multi_robot_arm) StdoutLine: {'line': b'-- Found rclcpp: 16.0.5 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.825949] (-) TimerEvent: {}
+[0.880758] (pymoveit2) StdoutLine: {'line': b'running egg_info\n'}
+[0.882313] (pymoveit2) StdoutLine: {'line': b'writing pymoveit2.egg-info/PKG-INFO\n'}
+[0.890325] (pymoveit2) StdoutLine: {'line': b'writing dependency_links to pymoveit2.egg-info/dependency_links.txt\n'}
+[0.893982] (pymoveit2) StdoutLine: {'line': b'writing top-level names to pymoveit2.egg-info/top_level.txt\n'}
+[0.896903] (pymoveit2) StdoutLine: {'line': b"reading manifest file 'pymoveit2.egg-info/SOURCES.txt'\n"}
+[0.897082] (pymoveit2) StdoutLine: {'line': b"writing manifest file 'pymoveit2.egg-info/SOURCES.txt'\n"}
+[0.929961] (-) TimerEvent: {}
+[0.981178] (pymoveit2) StdoutLine: {'line': b'Built target ament_cmake_python_build_pymoveit2_egg\n'}
+[1.018044] (pymoveit2) CommandEnded: {'returncode': 0}
+[1.037963] (-) TimerEvent: {}
+[1.122219] (multi_robot_arm) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.141959] (-) TimerEvent: {}
+[1.147479] (multi_robot_arm) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.154273] (pymoveit2) JobProgress: {'identifier': 'pymoveit2', 'progress': 'install'}
+[1.185994] (pymoveit2) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/aliihsan/robot_ws/build/pymoveit2'], 'cwd': '/home/aliihsan/robot_ws/build/pymoveit2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'aliihsan'), ('LC_TIME', 'fr_FR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/aliihsan'), ('OLDPWD', '/home/aliihsan'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'fr_FR.UTF-8'), ('SYSTEMD_EXEC_PID', '1744'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/aliihsan/robot_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'aliihsan'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'aliihsan'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/urdf/ur/meshes'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/aliihsan/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/aliihsan-Latitude-5480:@/tmp/.ICE-unix/1698,unix/aliihsan-Latitude-5480:/tmp/.ICE-unix/1698'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'fr_FR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/0ec7afb9_59ec_40a0_b5e8_b8f9dc223bca'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'fr_FR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.1TYLB2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.1623'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/aliihsan/robot_ws/install/pymoveit2:/home/aliihsan/robot_ws/install/multi_robot_arm:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'fr_FR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'fr_FR.UTF-8'), ('LC_IDENTIFICATION', 'fr_FR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/aliihsan/robot_ws/build/pymoveit2'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/aliihsan/robot_ws/install/pymoveit2/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'fr_FR.UTF-8'), ('LC_PAPER', 'fr_FR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/aliihsan/robot_ws/install/pymoveit2:/home/aliihsan/robot_ws/install/multi_robot_arm:/opt/ros/humble')]), 'shell': False}
+[1.190010] (multi_robot_arm) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.198220] (pymoveit2) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.200108] (pymoveit2) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[1.201399] (pymoveit2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/pymoveit2/share/pymoveit2/environment/pythonpath.sh\n'}
+[1.202638] (pymoveit2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/pymoveit2/share/pymoveit2/environment/pythonpath.dsv\n'}
+[1.204197] (pymoveit2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/pymoveit2/local/lib/python3.10/dist-packages/pymoveit2-2.1.0-py3.10.egg-info/PKG-INFO\n'}
+[1.210146] (pymoveit2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/pymoveit2/local/lib/python3.10/dist-packages/pymoveit2-2.1.0-py3.10.egg-info/SOURCES.txt\n'}
+[1.211409] (pymoveit2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/pymoveit2/local/lib/python3.10/dist-packages/pymoveit2-2.1.0-py3.10.egg-info/dependency_links.txt\n'}
+[1.212577] (pymoveit2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/pymoveit2/local/lib/python3.10/dist-packages/pymoveit2-2.1.0-py3.10.egg-info/top_level.txt\n'}
+[1.214375] (pymoveit2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/pymoveit2/local/lib/python3.10/dist-packages/pymoveit2/__init__.py\n'}
+[1.215512] (pymoveit2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/pymoveit2/local/lib/python3.10/dist-packages/pymoveit2/gripper_command.py\n'}
+[1.216641] (pymoveit2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/pymoveit2/local/lib/python3.10/dist-packages/pymoveit2/moveit2.py\n'}
+[1.217770] (pymoveit2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/pymoveit2/local/lib/python3.10/dist-packages/pymoveit2/moveit2_gripper.py\n'}
+[1.218263] (pymoveit2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/pymoveit2/local/lib/python3.10/dist-packages/pymoveit2/moveit2_servo.py\n'}
+[1.218746] (pymoveit2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/pymoveit2/local/lib/python3.10/dist-packages/pymoveit2/robots/__init__.py\n'}
+[1.219223] (pymoveit2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/pymoveit2/local/lib/python3.10/dist-packages/pymoveit2/robots/panda.py\n'}
+[1.219694] (pymoveit2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/pymoveit2/local/lib/python3.10/dist-packages/pymoveit2/robots/ur5.py\n'}
+[1.226020] (pymoveit2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/pymoveit2/lib/pymoveit2/ex_collision_object.py\n'}
+[1.226568] (pymoveit2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/pymoveit2/lib/pymoveit2/ex_gripper_command.py\n'}
+[1.227009] (pymoveit2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/pymoveit2/lib/pymoveit2/ex_gripper.py\n'}
+[1.227441] (pymoveit2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/pymoveit2/lib/pymoveit2/ex_joint_goal.py\n'}
+[1.227879] (pymoveit2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/pymoveit2/lib/pymoveit2/ex_pose_goal.py\n'}
+[1.228305] (pymoveit2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/pymoveit2/lib/pymoveit2/ex_servo.py\n'}
+[1.228851] (pymoveit2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/pymoveit2/share/ament_index/resource_index/package_run_dependencies/pymoveit2\n'}
+[1.229391] (pymoveit2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/pymoveit2/share/ament_index/resource_index/parent_prefix_path/pymoveit2\n'}
+[1.229920] (pymoveit2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/pymoveit2/share/pymoveit2/environment/ament_prefix_path.sh\n'}
+[1.230451] (pymoveit2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/pymoveit2/share/pymoveit2/environment/ament_prefix_path.dsv\n'}
+[1.230975] (pymoveit2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/pymoveit2/share/pymoveit2/environment/path.sh\n'}
+[1.231484] (pymoveit2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/pymoveit2/share/pymoveit2/environment/path.dsv\n'}
+[1.231995] (pymoveit2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/pymoveit2/share/pymoveit2/local_setup.bash\n'}
+[1.232506] (pymoveit2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/pymoveit2/share/pymoveit2/local_setup.sh\n'}
+[1.233025] (pymoveit2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/pymoveit2/share/pymoveit2/local_setup.zsh\n'}
+[1.234030] (pymoveit2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/pymoveit2/share/pymoveit2/local_setup.dsv\n'}
+[1.237985] (pymoveit2) StdoutLine: {'line': b'-- Symlinking: /home/aliihsan/robot_ws/install/pymoveit2/share/pymoveit2/package.dsv\n'}
+[1.242032] (-) TimerEvent: {}
+[1.247352] (multi_robot_arm) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.274679] (pymoveit2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/pymoveit2/share/ament_index/resource_index/packages/pymoveit2\n'}
+[1.275346] (pymoveit2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/pymoveit2/share/pymoveit2/cmake/pymoveit2Config.cmake\n'}
+[1.275595] (pymoveit2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/pymoveit2/share/pymoveit2/cmake/pymoveit2Config-version.cmake\n'}
+[1.275825] (pymoveit2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/pymoveit2/share/pymoveit2/package.xml\n'}
+[1.345973] (-) TimerEvent: {}
+[1.367540] (multi_robot_arm) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.382099] (pymoveit2) StdoutLine: {'line': b"Listing '/home/aliihsan/robot_ws/install/pymoveit2/local/lib/python3.10/dist-packages/pymoveit2'...\n"}
+[1.382356] (pymoveit2) StdoutLine: {'line': b"Listing '/home/aliihsan/robot_ws/install/pymoveit2/local/lib/python3.10/dist-packages/pymoveit2/robots'...\n"}
+[1.399891] (pymoveit2) CommandEnded: {'returncode': 0}
+[1.446063] (-) TimerEvent: {}
+[1.549963] (-) TimerEvent: {}
+[1.641964] (multi_robot_arm) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.642206] (pymoveit2) JobEnded: {'identifier': 'pymoveit2', 'rc': 0}
+[1.642674] (multi_robot_arm) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.3 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.653975] (-) TimerEvent: {}
+[1.757976] (-) TimerEvent: {}
+[1.858292] (-) TimerEvent: {}
+[1.958604] (-) TimerEvent: {}
+[1.990709] (multi_robot_arm) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.058712] (-) TimerEvent: {}
+[2.159039] (-) TimerEvent: {}
+[2.259339] (-) TimerEvent: {}
+[2.359648] (-) TimerEvent: {}
+[2.459977] (-) TimerEvent: {}
+[2.510954] (multi_robot_arm) StdoutLine: {'line': b'-- Found gazebo_ros: 3.7.0 (/opt/ros/humble/share/gazebo_ros/cmake)\n'}
+[2.560094] (-) TimerEvent: {}
+[2.613175] (multi_robot_arm) StdoutLine: {'line': b'-- Found DART: /usr/include (Required is at least version "6.6") found components: dart \n'}
+[2.660192] (-) TimerEvent: {}
+[2.706952] (multi_robot_arm) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") \n'}
+[2.715735] (multi_robot_arm) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.0\n'}
+[2.726764] (multi_robot_arm) StdoutLine: {'line': b'-- Searching for dependencies of ignition-math6\n'}
+[2.734634] (multi_robot_arm) StdoutLine: {'line': b'-- Looking for OGRE...\n'}
+[2.742644] (multi_robot_arm) StdoutLine: {'line': b'-- Found Ogre Ghadamon (1.9.0)\n'}
+[2.754023] (multi_robot_arm) StdoutLine: {'line': b'-- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so\n'}
+[2.760291] (-) TimerEvent: {}
+[2.770039] (multi_robot_arm) StdoutLine: {'line': b'-- Looking for OGRE_Paging...\n'}
+[2.771206] (multi_robot_arm) StdoutLine: {'line': b'-- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so\n'}
+[2.772165] (multi_robot_arm) StdoutLine: {'line': b'-- Looking for OGRE_Terrain...\n'}
+[2.773222] (multi_robot_arm) StdoutLine: {'line': b'-- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so\n'}
+[2.774189] (multi_robot_arm) StdoutLine: {'line': b'-- Looking for OGRE_Property...\n'}
+[2.775277] (multi_robot_arm) StdoutLine: {'line': b'-- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so\n'}
+[2.776206] (multi_robot_arm) StdoutLine: {'line': b'-- Looking for OGRE_RTShaderSystem...\n'}
+[2.777229] (multi_robot_arm) StdoutLine: {'line': b'-- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so\n'}
+[2.777559] (multi_robot_arm) StdoutLine: {'line': b'-- Looking for OGRE_Volume...\n'}
+[2.777966] (multi_robot_arm) StdoutLine: {'line': b'-- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so\n'}
+[2.780003] (multi_robot_arm) StdoutLine: {'line': b'-- Looking for OGRE_Overlay...\n'}
+[2.780479] (multi_robot_arm) StdoutLine: {'line': b'-- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so\n'}
+[2.860379] (-) TimerEvent: {}
+[2.960714] (-) TimerEvent: {}
+[2.989875] (multi_robot_arm) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.0\n'}
+[2.999946] (multi_robot_arm) StdoutLine: {'line': b'-- Looking for ignition-transport8 -- found version 8.2.1\n'}
+[3.000211] (multi_robot_arm) StdoutLine: {'line': b'-- Searching for dependencies of ignition-transport8\n'}
+[3.035610] (multi_robot_arm) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") \n'}
+[3.060817] (-) TimerEvent: {}
+[3.065557] (multi_robot_arm) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[3.076912] (multi_robot_arm) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[3.111272] (multi_robot_arm) StdoutLine: {'line': b'--   Found libzmq , version 4.3.4\n'}
+[3.161969] (-) TimerEvent: {}
+[3.213436] (multi_robot_arm) StdoutLine: {'line': b"-- Checking for module 'uuid'\n"}
+[3.250284] (multi_robot_arm) StdoutLine: {'line': b'--   Found uuid, version 2.37.2\n'}
+[3.262381] (-) TimerEvent: {}
+[3.319148] (multi_robot_arm) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[3.320077] (multi_robot_arm) StdoutLine: {'line': b'-- Searching for dependencies of ignition-msgs5\n'}
+[3.354074] (multi_robot_arm) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.0\n'}
+[3.363679] (-) TimerEvent: {}
+[3.364192] (multi_robot_arm) StdoutLine: {'line': b"-- Checking for module 'tinyxml2'\n"}
+[3.386886] (multi_robot_arm) StdoutLine: {'line': b'--   Found tinyxml2, version 9.0.0\n'}
+[3.453545] (multi_robot_arm) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[3.455246] (multi_robot_arm) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[3.456997] (multi_robot_arm) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3\n'}
+[3.458373] (multi_robot_arm) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[3.458657] (multi_robot_arm) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[3.463765] (-) TimerEvent: {}
+[3.486030] (multi_robot_arm) StdoutLine: {'line': b'-- Searching for <ignition-common3> component [graphics]\n'}
+[3.487090] (multi_robot_arm) StdoutLine: {'line': b'-- Looking for ignition-common3-graphics -- found version 3.14.0\n'}
+[3.487969] (multi_robot_arm) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3-graphics\n'}
+[3.488593] (multi_robot_arm) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.0\n'}
+[3.499990] (multi_robot_arm) StdoutLine: {'line': b'-- Looking for ignition-fuel_tools4 -- found version 4.4.0\n'}
+[3.500236] (multi_robot_arm) StdoutLine: {'line': b'-- Searching for dependencies of ignition-fuel_tools4\n'}
+[3.563874] (-) TimerEvent: {}
+[3.575976] (multi_robot_arm) StdoutLine: {'line': b"-- Checking for module 'jsoncpp'\n"}
+[3.614791] (multi_robot_arm) StdoutLine: {'line': b'--   Found jsoncpp, version 1.9.5\n'}
+[3.663979] (-) TimerEvent: {}
+[3.684176] (multi_robot_arm) StdoutLine: {'line': b"-- Checking for module 'libzip'\n"}
+[3.718279] (multi_robot_arm) StdoutLine: {'line': b'--   Found libzip, version 1.7.3\n'}
+[3.765973] (-) TimerEvent: {}
+[3.810399] (multi_robot_arm) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[3.811305] (multi_robot_arm) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.0\n'}
+[3.812145] (multi_robot_arm) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[3.826068] (multi_robot_arm) StdoutLine: {'line': b'-- Gazebo version: 11.10\n'}
+[3.869963] (-) TimerEvent: {}
+[3.961941] (multi_robot_arm) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.970062] (-) TimerEvent: {}
+[3.980960] (multi_robot_arm) StdoutLine: {'line': b'-- Generating done\n'}
+[3.984758] (multi_robot_arm) StdoutLine: {'line': b'-- Build files have been written to: /home/aliihsan/robot_ws/build/multi_robot_arm\n'}
+[4.038535] (multi_robot_arm) CommandEnded: {'returncode': 0}
+[4.073993] (-) TimerEvent: {}
+[4.116341] (multi_robot_arm) JobProgress: {'identifier': 'multi_robot_arm', 'progress': 'install'}
+[4.117277] (multi_robot_arm) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/aliihsan/robot_ws/build/multi_robot_arm'], 'cwd': '/home/aliihsan/robot_ws/build/multi_robot_arm', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'aliihsan'), ('LC_TIME', 'fr_FR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/aliihsan'), ('OLDPWD', '/home/aliihsan'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'fr_FR.UTF-8'), ('SYSTEMD_EXEC_PID', '1744'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/aliihsan/robot_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'aliihsan'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'aliihsan'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/urdf/ur/meshes'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/aliihsan/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/aliihsan-Latitude-5480:@/tmp/.ICE-unix/1698,unix/aliihsan-Latitude-5480:/tmp/.ICE-unix/1698'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'fr_FR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/0ec7afb9_59ec_40a0_b5e8_b8f9dc223bca'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'fr_FR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.1TYLB2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.1623'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/aliihsan/robot_ws/install/pymoveit2:/home/aliihsan/robot_ws/install/multi_robot_arm:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'fr_FR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'fr_FR.UTF-8'), ('LC_IDENTIFICATION', 'fr_FR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/aliihsan/robot_ws/build/multi_robot_arm'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/aliihsan/robot_ws/install/pymoveit2/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'fr_FR.UTF-8'), ('LC_PAPER', 'fr_FR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/aliihsan/robot_ws/install/pymoveit2:/home/aliihsan/robot_ws/install/multi_robot_arm:/opt/ros/humble')]), 'shell': False}
+[4.139128] (multi_robot_arm) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[4.139374] (multi_robot_arm) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[4.139791] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/launch/gazebo_arm.launch.py\n'}
+[4.140046] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/launch/joystick.launch.py\n'}
+[4.140285] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/launch/localization_launch.py\n'}
+[4.140502] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/launch/navigation_launch.py\n'}
+[4.140717] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/launch/online_async_launch.py\n'}
+[4.140950] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/launch/simple_bot.launch.py\n'}
+[4.141183] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/launch/test.launch.py\n'}
+[4.141951] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/config/control.yaml\n'}
+[4.142212] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/config/gaz_ros2_ctl_use_sim.yaml\n'}
+[4.142463] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/config/gazebo_params.yaml\n'}
+[4.142699] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/config/joystick.yaml\n'}
+[4.142936] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/config/main.rviz\n'}
+[4.143172] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/config/map.rviz\n'}
+[4.143405] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/config/mapper_params_online_async.yaml\n'}
+[4.143643] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/config/my_controllers.yaml\n'}
+[4.143878] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/config/nav2_params.yaml\n'}
+[4.144617] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/config/twist_mux.yaml\n'}
+[4.145102] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/config/ur/ur5/chomp_planning.yaml\n'}
+[4.145564] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/config/ur/ur5/default_kinematics.yaml\n'}
+[4.149982] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/config/ur/ur5/initial_positions.yaml\n'}
+[4.150228] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/config/ur/ur5/joint_limits.yaml\n'}
+[4.150369] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/config/ur/ur5/joint_limits_planning.yaml\n'}
+[4.150519] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/config/ur/ur5/kinematics.yaml\n'}
+[4.150656] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/config/ur/ur5/moveit_controller_manager.yaml\n'}
+[4.158138] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/config/ur/ur5/ompl_planning.yaml\n'}
+[4.158464] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/config/ur/ur5/physical_parameters.yaml\n'}
+[4.158700] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/config/ur/ur5/robot.srdf\n'}
+[4.158927] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/config/ur/ur5/ros_controllers_robot.yaml\n'}
+[4.159153] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/config/ur/ur5/visual_parameters.yaml\n'}
+[4.160257] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/urdf/bcr_bot.xacro\n'}
+[4.160508] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/urdf/bcr_bot_copy.xacro\n'}
+[4.160741] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/urdf/common_properties.urdf\n'}
+[4.160983] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/urdf/diffbot.urdf.xacro\n'}
+[4.161245] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/urdf/diffbot_system.urdf.xacro\n'}
+[4.161481] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/urdf/gazebo.xacro\n'}
+[4.161714] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/urdf/gazebo_control.xacro\n'}
+[4.161960] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/urdf/gazebo_control_copy.xacro\n'}
+[4.162202] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/urdf/gz.xacro\n'}
+[4.162427] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/urdf/inertial_macros.xacro\n'}
+[4.162664] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/urdf/lidar.xacro\n'}
+[4.162899] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/urdf/logotest.xacro\n'}
+[4.163152] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/urdf/macros.xacro\n'}
+[4.163618] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/urdf/materials.xacro\n'}
+[4.164064] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/urdf/omni_drive.urdf.xacro\n'}
+[4.164316] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/urdf/ur/inc/ur_common.xacro\n'}
+[4.164854] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/urdf/ur/inc/ur_transmissions.xacro\n'}
+[4.165374] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/urdf/ur/meshes/ur5/collision/base.stl\n'}
+[4.166161] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/urdf/ur/meshes/ur5/collision/forearm.stl\n'}
+[4.166683] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/urdf/ur/meshes/ur5/collision/shoulder.stl\n'}
+[4.167193] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/urdf/ur/meshes/ur5/collision/upperarm.stl\n'}
+[4.167707] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/urdf/ur/meshes/ur5/collision/wrist1.stl\n'}
+[4.168207] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/urdf/ur/meshes/ur5/collision/wrist2.stl\n'}
+[4.169529] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/urdf/ur/meshes/ur5/collision/wrist3.stl\n'}
+[4.169771] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/urdf/ur/meshes/ur5/visual/base.dae\n'}
+[4.170005] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/urdf/ur/meshes/ur5/visual/forearm.dae\n'}
+[4.170153] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/urdf/ur/meshes/ur5/visual/shoulder.dae\n'}
+[4.170298] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/urdf/ur/meshes/ur5/visual/upperarm.dae\n'}
+[4.170436] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/urdf/ur/meshes/ur5/visual/wrist1.dae\n'}
+[4.170571] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/urdf/ur/meshes/ur5/visual/wrist2.dae\n'}
+[4.170707] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/urdf/ur/meshes/ur5/visual/wrist3.dae\n'}
+[4.170857] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/urdf/ur/ur5/ur_macro.xacro\n'}
+[4.171010] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/urdf/ur/ur5/ur_ros2_control.xacro\n'}
+[4.171147] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/urdf/ur/ur5/ur_urdf.xacro\n'}
+[4.171282] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/models/rwthlogo/materials/scripts/rwthlogo.material\n'}
+[4.171417] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/models/rwthlogo/materials/textures/logo.png\n'}
+[4.171553] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/models/rwthlogo/model.config\n'}
+[4.177961] (-) TimerEvent: {}
+[4.182241] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/models/rwthlogo/model.sdf\n'}
+[4.182819] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/meshes/arm_base.stl\n'}
+[4.183056] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/meshes/bcr_bot_mesh.dae\n'}
+[4.183276] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/meshes/bicep.stl\n'}
+[4.183507] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/meshes/elbow.stl\n'}
+[4.183730] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/meshes/kinect/d415.dae\n'}
+[4.183963] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/meshes/kinect/kinect.dae\n'}
+[4.184189] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/meshes/kinect/kinect.jpg\n'}
+[4.184399] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/meshes/kinect/kinect.tga\n'}
+[4.184625] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/meshes/logo.dae\n'}
+[4.184850] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/meshes/logo1.png\n'}
+[4.185074] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/meshes/realsense_texture.png\n'}
+[4.185297] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/meshes/robot_base.stl\n'}
+[4.185520] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/meshes/wheel.stl\n'}
+[4.185739] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/meshes/wrist.stl\n'}
+[4.186205] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/worlds/empty.world\n'}
+[4.186438] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/worlds/warehouse.world\n'}
+[4.186905] (multi_robot_arm) StdoutLine: {'line': b'-- Symlinking: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/nav2folder/__init__.py\n'}
+[4.214506] (multi_robot_arm) StdoutLine: {'line': b'-- Symlinking: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/nav2folder/example_follow_path.py\n'}
+[4.242910] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/environment/multi_robot_arm.dsv\n'}
+[4.243428] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/ament_index/resource_index/package_run_dependencies/multi_robot_arm\n'}
+[4.243609] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/ament_index/resource_index/parent_prefix_path/multi_robot_arm\n'}
+[4.243809] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/environment/ament_prefix_path.sh\n'}
+[4.244594] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/environment/ament_prefix_path.dsv\n'}
+[4.244773] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/environment/path.sh\n'}
+[4.244918] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/environment/path.dsv\n'}
+[4.245126] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/local_setup.bash\n'}
+[4.245685] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/local_setup.sh\n'}
+[4.245845] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/local_setup.zsh\n'}
+[4.246072] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/local_setup.dsv\n'}
+[4.246295] (multi_robot_arm) StdoutLine: {'line': b'-- Symlinking: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/package.dsv\n'}
+[4.266668] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/ament_index/resource_index/packages/multi_robot_arm\n'}
+[4.266955] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/cmake/multi_robot_armConfig.cmake\n'}
+[4.267194] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/cmake/multi_robot_armConfig-version.cmake\n'}
+[4.274129] (multi_robot_arm) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/package.xml\n'}
+[4.278145] (-) TimerEvent: {}
+[4.278303] (multi_robot_arm) CommandEnded: {'returncode': 0}
+[4.378549] (-) TimerEvent: {}
+[4.465633] (multi_robot_arm) JobEnded: {'identifier': 'multi_robot_arm', 'rc': 0}
+[4.467918] (-) EventReactorShutdown: {}

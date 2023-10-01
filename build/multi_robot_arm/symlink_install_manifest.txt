@@ -1,5 +1,8 @@
 /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/launch/gazebo_arm.launch.py
 /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/launch/joystick.launch.py
+/home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/launch/localization_launch.py
+/home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/launch/navigation_launch.py
+/home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/launch/online_async_launch.py
 /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/launch/simple_bot.launch.py
 /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/launch/test.launch.py
 /home/aliihsan/robot_ws/install/multi_robot_arm/share/multi_robot_arm/config/control.yaml

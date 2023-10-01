@@ -1,0 +1,38 @@
+[0.607s] Invoking command in '/home/aliihsan/robot_ws/src/nav2_simple_commander': PYTHONPATH=/home/aliihsan/robot_ws/src/nav2_simple_commander/build/nav2_simple_commander/prefix_override:/home/aliihsan/robot_ws/src/nav2_simple_commander/install/nav2_simple_commander/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base build/nav2_simple_commander build --build-base /home/aliihsan/robot_ws/src/nav2_simple_commander/build/nav2_simple_commander/build install --record /home/aliihsan/robot_ws/src/nav2_simple_commander/build/nav2_simple_commander/install.log --single-version-externally-managed
+[0.836s] running egg_info
+[0.836s] creating build/nav2_simple_commander/nav2_simple_commander.egg-info
+[0.837s] writing build/nav2_simple_commander/nav2_simple_commander.egg-info/PKG-INFO
+[0.837s] writing dependency_links to build/nav2_simple_commander/nav2_simple_commander.egg-info/dependency_links.txt
+[0.837s] writing entry points to build/nav2_simple_commander/nav2_simple_commander.egg-info/entry_points.txt
+[0.837s] writing requirements to build/nav2_simple_commander/nav2_simple_commander.egg-info/requires.txt
+[0.838s] writing top-level names to build/nav2_simple_commander/nav2_simple_commander.egg-info/top_level.txt
+[0.838s] writing manifest file 'build/nav2_simple_commander/nav2_simple_commander.egg-info/SOURCES.txt'
+[0.839s] reading manifest file 'build/nav2_simple_commander/nav2_simple_commander.egg-info/SOURCES.txt'
+[0.840s] writing manifest file 'build/nav2_simple_commander/nav2_simple_commander.egg-info/SOURCES.txt'
+[0.840s] running build
+[0.840s] running build_py
+[0.840s] creating /home/aliihsan/robot_ws/src/nav2_simple_commander/build/nav2_simple_commander/build
+[0.841s] creating /home/aliihsan/robot_ws/src/nav2_simple_commander/build/nav2_simple_commander/build/lib
+[0.841s] creating /home/aliihsan/robot_ws/src/nav2_simple_commander/build/nav2_simple_commander/build/lib/nav2_simple_commander
+[0.841s] copying nav2_simple_commander/__init__.py -> /home/aliihsan/robot_ws/src/nav2_simple_commander/build/nav2_simple_commander/build/lib/nav2_simple_commander
+[0.841s] copying nav2_simple_commander/example_follow_path.py -> /home/aliihsan/robot_ws/src/nav2_simple_commander/build/nav2_simple_commander/build/lib/nav2_simple_commander
+[0.841s] running install
+[0.841s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[0.841s]   warnings.warn(
+[0.842s] running install_lib
+[0.842s] creating /home/aliihsan/robot_ws/src/nav2_simple_commander/install/nav2_simple_commander/lib/python3.10/site-packages/nav2_simple_commander
+[0.842s] copying /home/aliihsan/robot_ws/src/nav2_simple_commander/build/nav2_simple_commander/build/lib/nav2_simple_commander/__init__.py -> /home/aliihsan/robot_ws/src/nav2_simple_commander/install/nav2_simple_commander/lib/python3.10/site-packages/nav2_simple_commander
+[0.843s] copying /home/aliihsan/robot_ws/src/nav2_simple_commander/build/nav2_simple_commander/build/lib/nav2_simple_commander/example_follow_path.py -> /home/aliihsan/robot_ws/src/nav2_simple_commander/install/nav2_simple_commander/lib/python3.10/site-packages/nav2_simple_commander
+[0.843s] byte-compiling /home/aliihsan/robot_ws/src/nav2_simple_commander/install/nav2_simple_commander/lib/python3.10/site-packages/nav2_simple_commander/__init__.py to __init__.cpython-310.pyc
+[0.843s] byte-compiling /home/aliihsan/robot_ws/src/nav2_simple_commander/install/nav2_simple_commander/lib/python3.10/site-packages/nav2_simple_commander/example_follow_path.py to example_follow_path.cpython-310.pyc
+[0.844s] running install_data
+[0.845s] creating /home/aliihsan/robot_ws/src/nav2_simple_commander/install/nav2_simple_commander/share/ament_index
+[0.845s] creating /home/aliihsan/robot_ws/src/nav2_simple_commander/install/nav2_simple_commander/share/ament_index/resource_index
+[0.845s] creating /home/aliihsan/robot_ws/src/nav2_simple_commander/install/nav2_simple_commander/share/ament_index/resource_index/packages
+[0.845s] copying resource/nav2_simple_commander -> /home/aliihsan/robot_ws/src/nav2_simple_commander/install/nav2_simple_commander/share/ament_index/resource_index/packages
+[0.845s] copying package.xml -> /home/aliihsan/robot_ws/src/nav2_simple_commander/install/nav2_simple_commander/share/nav2_simple_commander
+[0.845s] running install_egg_info
+[0.848s] Copying build/nav2_simple_commander/nav2_simple_commander.egg-info to /home/aliihsan/robot_ws/src/nav2_simple_commander/install/nav2_simple_commander/lib/python3.10/site-packages/nav2_simple_commander-0.0.0-py3.10.egg-info
+[0.849s] running install_scripts
+[0.867s] writing list of installed files to '/home/aliihsan/robot_ws/src/nav2_simple_commander/build/nav2_simple_commander/install.log'
+[0.886s] Invoked command in '/home/aliihsan/robot_ws/src/nav2_simple_commander' returned '0': PYTHONPATH=/home/aliihsan/robot_ws/src/nav2_simple_commander/build/nav2_simple_commander/prefix_override:/home/aliihsan/robot_ws/src/nav2_simple_commander/install/nav2_simple_commander/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base build/nav2_simple_commander build --build-base /home/aliihsan/robot_ws/src/nav2_simple_commander/build/nav2_simple_commander/build install --record /home/aliihsan/robot_ws/src/nav2_simple_commander/build/nav2_simple_commander/install.log --single-version-externally-managed

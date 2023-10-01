@@ -1,0 +1,24 @@
+[0.785s] Invoking command in '/home/aliihsan/robot_ws/build/nav2_simple_commander': PYTHONPATH=/home/aliihsan/robot_ws/build/nav2_simple_commander/prefix_override:/home/aliihsan/robot_ws/install/nav2_simple_commander/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/aliihsan/robot_ws/build/nav2_simple_commander/build
+[1.099s] running develop
+[1.350s] Invoked command in '/home/aliihsan/robot_ws/build/nav2_simple_commander' returned '0': PYTHONPATH=/home/aliihsan/robot_ws/build/nav2_simple_commander/prefix_override:/home/aliihsan/robot_ws/install/nav2_simple_commander/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/aliihsan/robot_ws/build/nav2_simple_commander/build
+[1.351s] Invoking command in '/home/aliihsan/robot_ws/src/nav2_simple_commander': PYTHONPATH=/home/aliihsan/robot_ws/build/nav2_simple_commander/prefix_override:/home/aliihsan/robot_ws/install/nav2_simple_commander/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/nav2_simple_commander build --build-base /home/aliihsan/robot_ws/build/nav2_simple_commander/build install --record /home/aliihsan/robot_ws/build/nav2_simple_commander/install.log --single-version-externally-managed
+[1.771s] running egg_info
+[1.772s] writing ../../build/nav2_simple_commander/nav2_simple_commander.egg-info/PKG-INFO
+[1.772s] writing dependency_links to ../../build/nav2_simple_commander/nav2_simple_commander.egg-info/dependency_links.txt
+[1.772s] writing entry points to ../../build/nav2_simple_commander/nav2_simple_commander.egg-info/entry_points.txt
+[1.772s] writing requirements to ../../build/nav2_simple_commander/nav2_simple_commander.egg-info/requires.txt
+[1.772s] writing top-level names to ../../build/nav2_simple_commander/nav2_simple_commander.egg-info/top_level.txt
+[1.776s] reading manifest file '../../build/nav2_simple_commander/nav2_simple_commander.egg-info/SOURCES.txt'
+[1.777s] writing manifest file '../../build/nav2_simple_commander/nav2_simple_commander.egg-info/SOURCES.txt'
+[1.777s] running build
+[1.778s] running build_py
+[1.778s] running install
+[1.778s] running install_lib
+[1.780s] running install_data
+[1.781s] running install_egg_info
+[1.784s] removing '/home/aliihsan/robot_ws/install/nav2_simple_commander/lib/python3.10/site-packages/nav2_simple_commander-0.0.0-py3.10.egg-info' (and everything under it)
+[1.785s] Copying ../../build/nav2_simple_commander/nav2_simple_commander.egg-info to /home/aliihsan/robot_ws/install/nav2_simple_commander/lib/python3.10/site-packages/nav2_simple_commander-0.0.0-py3.10.egg-info
+[1.786s] running install_scripts
+[1.822s] Installing example_follow_path script to /home/aliihsan/robot_ws/install/nav2_simple_commander/lib/nav2_simple_commander
+[1.822s] writing list of installed files to '/home/aliihsan/robot_ws/build/nav2_simple_commander/install.log'
+[1.860s] Invoked command in '/home/aliihsan/robot_ws/src/nav2_simple_commander' returned '0': PYTHONPATH=/home/aliihsan/robot_ws/build/nav2_simple_commander/prefix_override:/home/aliihsan/robot_ws/install/nav2_simple_commander/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/nav2_simple_commander build --build-base /home/aliihsan/robot_ws/build/nav2_simple_commander/build install --record /home/aliihsan/robot_ws/build/nav2_simple_commander/install.log --single-version-externally-managed

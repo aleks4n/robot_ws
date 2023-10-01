@@ -42,6 +42,11 @@ def generate_launch_description():
     camera_enabled = LaunchConfiguration("camera_enabled", default=False)
     two_d_lidar_enabled = LaunchConfiguration("two_d_lidar_enabled", default=False)
     odometry_source = LaunchConfiguration("odometry_source", default="world")
+    nav2_bringup_dir = get_package_share_directory('nav2_bringup')
+    python_commander_dir = get_package_share_directory('nav2_simple_commander')
+
+    map_yaml_file = os.path.join('home', 'aliihsan', 'robot_ws', 'finishedmap.yaml')
+    
 
     cloudy_v2_urdf_path = PathJoinSubstitution(
         [FindPackageShare('multi_robot_arm'), 'urdf', 'robots', 'cloudy_v2.urdf.xacro']
@@ -54,7 +59,7 @@ def generate_launch_description():
        robot_desc = infp.read()
     
     declare_use_sim_time = DeclareLaunchArgument(
-        name="use_sim_time", default_value='true', description="Use simulator time"
+        name="use_sim_time", default_value="true", description="Use simulator time"
     )
     use_sim_time = LaunchConfiguration("use_sim_time", default="true")
 
@@ -98,6 +103,7 @@ def generate_launch_description():
             "-s", "libgazebo_ros_init.so",
             world,
         ],
+        
         output="screen",
     )
     gazebo_client = ExecuteProcess(cmd=["gzclient"], output="screen")
@@ -153,8 +159,9 @@ def generate_launch_description():
                     ' robot_namespace:=', "bir",
                     ])}],
         remappings=[
-            ('/joint_states', PythonExpression(['"', "bir", '/joint_states"'])),
+            ('/joint_states', PythonExpression(['"', "bir", '/joint_states"']))
         ]
+        
     )
 
     # Launch the spawn_entity node to spawn the robot in Gazebo
@@ -172,46 +179,6 @@ def generate_launch_description():
         ]
     )
 
-    robot_state_publisherr = Node(
-        package='robot_state_publisher',
-        executable='robot_state_publisher',
-        name='robot_state_publisher',
-        output='screen',
-        parameters=[{"use_sim_time": use_sim_time},
-                    {'robot_description': Command( \
-                    ['xacro ', xacro_path1,
-                    ' camera_enabled:=', "False",
-                    ' two_d_lidar_enabled:=', "False",
-                    ' sim_gazebo:=', "true",
-                    ' odometry_source:=', "world",
-                    ' robot_namespace:=', "iki",
-                    ])}],
-        remappings=[
-            ('/joint_states', PythonExpression(['"aaa', "iki", '/joint_states"'])),
-        ]
-    )
-
-    # Launch the spawn_entity node to spawn the robot in Gazebo
-    spawn_entityy = Node(
-        package='gazebo_ros',
-        executable='spawn_entity.py',
-        output='screen',
-        arguments=[
-            '-topic', "/robot_description",
-            '-entity', PythonExpression(['"aaa', "iki", '_robot"']), #default enitity name _bcr_bot
-            '-z', "0.50",
-            '-x', "3",
-            '-y', "0",
-            '-Y', "0"
-        ]
-    )
-
-
-
-
-
-    
-
     joystick = IncludeLaunchDescription(
                 PythonLaunchDescriptionSource([os.path.join(
                     package_path,'launch','joystick.launch.py'
@@ -226,19 +193,44 @@ def generate_launch_description():
             parameters=[twist_mux_params, {'use_sim_time': True}],
             remappings=[('/cmd_vel_out','/bir/cmd_vel')]
         )
+    
+
+
+    slam = IncludeLaunchDescription(
+                PythonLaunchDescriptionSource([os.path.join(
+                    package_path,'launch','online_async_launch.py'
+                )]), launch_arguments={'use_sim_time': 'true'}.items()
+    )
+
+    nav2 = IncludeLaunchDescription(
+                PythonLaunchDescriptionSource([os.path.join(
+                    package_path,'launch','navigation_launch.py'
+                )]), launch_arguments={'use_sim_time': 'true'}.items()
+    )
+
+    localization = IncludeLaunchDescription(
+                PythonLaunchDescriptionSource([os.path.join(
+                    package_path,'launch','localization_launch.py'
+                )]), launch_arguments={'use_sim_time': 'true'}.items()
+    )
+
+
+    bringup_cmd = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(
+            os.path.join(nav2_bringup_dir, 'launch', 'bringup_launch.py')),
+        launch_arguments={'map': map_yaml_file}.items())
 
 
 
+    rviz2 = ExecuteProcess(cmd=["rviz2"], output="screen")
 
 
 
-
-
-
-
-
-
-
+    demo_cmd = Node(
+        package='nav2_simple_commander',
+        executable='example_follow_path',
+        emulate_tty=True,
+        output='screen')
 
 
 
@@ -268,8 +260,17 @@ def generate_launch_description():
     ld.add_action(twist_mux)
     
     ld.add_action(spawn_entity)
-    ld.add_action(robot_state_publisher)    
+    ld.add_action(robot_state_publisher)
 
+
+    ld.add_action(slam)
+    ld.add_action(nav2)
+    ld.add_action(localization)   
+
+    ld.add_action(rviz2)
+
+    #ld.add_action(bringup_cmd)
+    ld.add_action(demo_cmd)
 
     #ld.add_action(spawn_robot2)
     #ld.add_action(robot_state_publisher2)
@@ -286,302 +287,4 @@ def generate_launch_description():
 
     return ld
 
-
-def spawn_robot(
-        ld, robot_type, robot_name, use_sim_time, x, y, z ,Y,
-        previous_final_action=None):
-
-    package_path = get_package_share_directory("multi_robot_arm")
-    namespace = "/" + robot_name
-
-    param_substitutions = {"use_sim_time": use_sim_time}
-    configured_params = RewrittenYaml(
-        source_file=package_path
-        + "/config/ur/" + robot_type + "/ros_controllers_robot.yaml",
-        root_key=robot_name,
-        param_rewrites=param_substitutions,
-        convert_types=True,
-    )
-
-    context = LaunchContext()
-    controller_paramfile = configured_params.perform(context)
-    xacro_path = os.path.join(package_path, "urdf", "ur", "ur5", "ur_urdf.xacro")
-
-    robot_doc = xacro.process_file(
-        xacro_path,
-        mappings={
-            "name": robot_name,
-            "namespace": namespace,
-            "sim_gazebo": "1",
-            "simulation_controllers": controller_paramfile,
-            "safety_limits": "true",
-            "prefix": "",
-            "pedestal_height": "0.1",
-        },
-    )
-
-    robot_urdf = robot_doc.toprettyxml(indent="  ")
-
-
-    remappings = [("/tf", "tf"), ("/tf_static", "tf_static")]
-
-    robot_params = {"robot_description": robot_urdf,
-                    "use_sim_time": use_sim_time}
-    robot_state_publisher = Node(
-        package="robot_state_publisher",
-        namespace=namespace,
-        executable="robot_state_publisher",
-        output="screen",
-        remappings=remappings,
-        parameters=[robot_params],
-    )
-
-    robot_description = {"robot_description": robot_urdf}
-
-    kinematics_yaml = load_yaml(
-        package_path, "config/ur/" + robot_type + "/kinematics.yaml"
-    )
-
-    robot_description_semantic_config = load_file(
-        package_path, "config/ur/" + robot_type + "/robot.srdf"
-    )
-    robot_description_semantic = {
-        "robot_description_semantic": robot_description_semantic_config
-    }
-
-    # Planning Functionality
-    ompl_planning_pipeline_config = {
-        "ompl": {
-            "planning_plugin": "ompl_interface/OMPLPlanner",
-            "request_adapters": "default_planner_request_adapters/AddTimeOptimalParameterization default_planner_request_adapters/FixWorkspaceBounds default_planner_request_adapters/FixStartStateBounds default_planner_request_adapters/FixStartStateCollision default_planner_request_adapters/FixStartStatePathConstraints",
-            "start_state_max_bounds_error": 0.1,
-        },
-    }
-
-    ompl_planning_yaml = load_yaml(
-        package_path, "config/ur/" + robot_type + "/ompl_planning.yaml"
-    )
-
-    ompl_planning_pipeline_config["ompl"].update(ompl_planning_yaml)
-
-    joint_limits_yaml = load_yaml(
-        package_path, "config/ur/" + robot_type + "/joint_limits_planning.yaml"
-    )
-
-    joint_limits = {"robot_description_planning": joint_limits_yaml}
-
-    # Trajectory Execution Functionality
-    moveit_simple_controllers_yaml = load_yaml(
-        package_path,
-        "config/ur/" + robot_type + "/moveit_controller_manager.yaml"
-    )
-
-    moveit_controllers = {
-        "moveit_simple_controller_manager": moveit_simple_controllers_yaml,
-        "moveit_controller_manager":
-        "moveit_simple_controller_manager/MoveItSimpleControllerManager",
-    }
-
-    trajectory_execution = {
-        "moveit_manage_controllers": True,
-        "trajectory_execution.allowed_execution_duration_scaling": 1.2,
-        "trajectory_execution.allowed_goal_duration_margin": 0.5,
-        "trajectory_execution.allowed_start_tolerance": 0.01,
-        "trajectory_execution.execution_duration_monitoring": True,
-        "trajectory_execution.controller_connection_timeout": 30.0,
-    }
-
-    planning_scene_monitor_parameters = {
-        "publish_planning_scene": True,
-        "publish_geometry_updates": True,
-        "publish_state_updates": True,
-        "publish_transforms_updates": True,
-        "default_planning_pipeline": "ESTkConfigDefault",
-        "use_sim_time": use_sim_time,
-    }
-
-    pipeline_names = {"pipeline_names": ["ompl"]}
-
-    planning_pipelines = {
-        "planning_pipelines": pipeline_names,
-        "default_planning_pipeline": "ompl",
-    }
-
-    # https://industrial-training-master.readthedocs.io/en/foxy/_source/session3/ros2/3-Build-a-MoveIt-Package.html
-    # Start the actual move_group node/action server
-    robot_move_group_node = Node(
-        package="moveit_ros_move_group",
-        executable="move_group",
-        namespace=namespace,
-        output="screen",
-        parameters=[
-            robot_description,
-            robot_description_semantic,
-            kinematics_yaml,
-            ompl_planning_pipeline_config,
-            trajectory_execution,
-            moveit_controllers,
-            planning_scene_monitor_parameters,
-            joint_limits,
-            planning_pipelines,
-            {"planning_plugin": "ompl", "use_sim_time": use_sim_time},
-        ],
-        remappings=remappings,
-        arguments=["--ros-args", "--log-level", "info"],
-    )
-
-
-    ros_distro = os.environ.get('ROS_DISTRO')
-    
-    # ROS2 Controller Manager in Foxy uses 'start' while Humble version expects 'active'
-
-    controller_run_state = 'active'
-    if ros_distro == 'foxy':
-        controller_run_state = 'start'
-
-    robot_spawn_entity = Node(
-        package="gazebo_ros",
-        executable="spawn_entity.py",
-        arguments=[
-            "-topic", namespace + "/robot_description",
-            "-entity", robot_name,
-            "-robot_namespace", namespace,
-            "-x", x,
-            "-y", y,
-            "-z", z,
-            "-Y", Y,
-            "-unpause",
-        ],
-        output="screen",
-    )
-
-    load_joint_state_controller = ExecuteProcess(
-        cmd=[
-            "ros2",
-            "control",
-            "load_controller",
-            "--set-state",
-            controller_run_state,
-            "joint_state_broadcaster",
-            "-c",
-            namespace + "/controller_manager",
-        ],
-        output="screen",
-    )
-
-    load_arm_trajectory_controller = ExecuteProcess(
-        cmd=[
-            "ros2",
-            "control",
-            "load_controller",
-            "--set-state",
-            controller_run_state,
-            "arm_controller",
-            "-c",
-            namespace + "/controller_manager",
-        ],
-        output="screen",
-    )
-    message = """ {
-            'header': {
-                'stamp': {
-                'sec': 0,
-                'nanosec': 0
-                },
-                'frame_id': ''
-            },
-            'joint_names': [
-                'shoulder_pan_joint',
-                'shoulder_lift_joint',
-                'elbow_joint',
-                'wrist_1_joint',
-                'wrist_2_joint',
-                'wrist_3_joint'
-            ],
-            'points': [
-                {
-                'positions': [0.0, -0.97, 2.0, -2.56, -1.55, 0.0],
-                'velocities': [],
-                'accelerations': [],
-                'effort': [],
-                'time_from_start': {
-                    'sec': 1,
-                    'nanosec': 0
-                }
-                }
-            ]
-            }"""
-
-    # Set initial joint position for robot.   This step is not needed for Humble 
-    # In Humble, initial positions are taken from initial_positions.yaml and set by ros2 control plugin
-    set_initial_pose = ExecuteProcess(
-        cmd=[
-            "ros2",
-            "topic",
-            "pub",
-            "--once",
-            "/" + robot_name + "/arm_controller/joint_trajectory",
-            "trajectory_msgs/msg/JointTrajectory",
-            message,
-        ],
-        output="screen",
-    )
-    
-    if previous_final_action is not None:
-        spawn_entity = RegisterEventHandler(
-            event_handler=OnProcessExit(
-                target_action=previous_final_action,
-                on_exit=[robot_spawn_entity],
-            )
-        )
-    else:
-        spawn_entity = robot_spawn_entity
-
-    state_controller_event = RegisterEventHandler(
-        event_handler=OnProcessExit(
-            target_action=robot_spawn_entity,
-            on_exit=[load_joint_state_controller],
-        )
-    )
-    arm_controller_event = RegisterEventHandler(
-        event_handler=OnProcessExit(
-            target_action=load_joint_state_controller,
-            on_exit=[load_arm_trajectory_controller],
-        )
-    )
-
-    set_initial_pose_event = RegisterEventHandler(
-        event_handler=OnProcessExit(
-            target_action=load_arm_trajectory_controller,
-            on_exit=[set_initial_pose],
-        )
-    )
-
-    ld.add_action(robot_state_publisher)
-    ld.add_action(robot_move_group_node)
-    ld.add_action(spawn_entity)
-    ld.add_action(state_controller_event)
-    ld.add_action(arm_controller_event)
-    ld.add_action(set_initial_pose_event)
-
-    return load_arm_trajectory_controller
-
-
-def load_file(package_path, file_path):
-
-    absolute_file_path = os.path.join(package_path, file_path)
-    try:
-        with open(absolute_file_path, "r") as file:
-            return file.read()
-    except EnvironmentError:
-        return None
-
-def load_yaml(package_path, file_path):
-
-    absolute_file_path = os.path.join(package_path, file_path)
-    try:
-        with open(absolute_file_path, "r") as file:
-            return yaml.safe_load(file)
-    except EnvironmentError:
-        return None
 

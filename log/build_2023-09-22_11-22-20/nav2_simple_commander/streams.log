@@ -1,0 +1,20 @@
+[0.856s] Invoking command in '/home/aliihsan/robot_ws/build/nav2_simple_commander': PYTHONPATH=/home/aliihsan/robot_ws/build/nav2_simple_commander/prefix_override:/home/aliihsan/robot_ws/install/nav2_simple_commander/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/aliihsan/robot_ws/build/nav2_simple_commander/build --no-deps install_data
+[1.166s] running develop
+[1.167s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[1.167s]   warnings.warn(
+[1.169s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.169s]   warnings.warn(
+[1.404s] running egg_info
+[1.404s] writing nav2_simple_commander.egg-info/PKG-INFO
+[1.404s] writing dependency_links to nav2_simple_commander.egg-info/dependency_links.txt
+[1.404s] writing entry points to nav2_simple_commander.egg-info/entry_points.txt
+[1.405s] writing requirements to nav2_simple_commander.egg-info/requires.txt
+[1.405s] writing top-level names to nav2_simple_commander.egg-info/top_level.txt
+[1.408s] reading manifest file 'nav2_simple_commander.egg-info/SOURCES.txt'
+[1.409s] writing manifest file 'nav2_simple_commander.egg-info/SOURCES.txt'
+[1.411s] running build_ext
+[1.411s] Creating /home/aliihsan/robot_ws/install/nav2_simple_commander/lib/python3.10/site-packages/nav2-simple-commander.egg-link (link to .)
+[1.412s] 
+[1.412s] Installed /home/aliihsan/robot_ws/build/nav2_simple_commander
+[1.412s] running install_data
+[1.452s] Invoked command in '/home/aliihsan/robot_ws/build/nav2_simple_commander' returned '0': PYTHONPATH=/home/aliihsan/robot_ws/build/nav2_simple_commander/prefix_override:/home/aliihsan/robot_ws/install/nav2_simple_commander/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/aliihsan/robot_ws/build/nav2_simple_commander/build --no-deps install_data

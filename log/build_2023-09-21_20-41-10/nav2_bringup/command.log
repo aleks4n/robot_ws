@@ -1,0 +1,6 @@
+Invoking command in '/home/aliihsan/robot_ws/build/nav2_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/aliihsan/robot_ws/src/nav2_bringup -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/aliihsan/robot_ws/install/nav2_bringup
+Invoked command in '/home/aliihsan/robot_ws/build/nav2_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/aliihsan/robot_ws/src/nav2_bringup -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/aliihsan/robot_ws/install/nav2_bringup
+Invoking command in '/home/aliihsan/robot_ws/build/nav2_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/aliihsan/robot_ws/build/nav2_bringup -- -j8 -l8
+Invoked command in '/home/aliihsan/robot_ws/build/nav2_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/aliihsan/robot_ws/build/nav2_bringup -- -j8 -l8
+Invoking command in '/home/aliihsan/robot_ws/build/nav2_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/aliihsan/robot_ws/build/nav2_bringup
+Invoked command in '/home/aliihsan/robot_ws/build/nav2_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/aliihsan/robot_ws/build/nav2_bringup

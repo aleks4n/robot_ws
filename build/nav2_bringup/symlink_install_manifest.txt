@@ -1,0 +1,16 @@
+/home/aliihsan/robot_ws/install/nav2_bringup/share/nav2_bringup/launch/bringup_launch.py
+/home/aliihsan/robot_ws/install/nav2_bringup/share/ament_index/resource_index/package_run_dependencies/nav2_bringup
+/home/aliihsan/robot_ws/install/nav2_bringup/share/ament_index/resource_index/parent_prefix_path/nav2_bringup
+/home/aliihsan/robot_ws/install/nav2_bringup/share/nav2_bringup/environment/ament_prefix_path.sh
+/home/aliihsan/robot_ws/install/nav2_bringup/share/nav2_bringup/environment/ament_prefix_path.dsv
+/home/aliihsan/robot_ws/install/nav2_bringup/share/nav2_bringup/environment/path.sh
+/home/aliihsan/robot_ws/install/nav2_bringup/share/nav2_bringup/environment/path.dsv
+/home/aliihsan/robot_ws/install/nav2_bringup/share/nav2_bringup/local_setup.bash
+/home/aliihsan/robot_ws/install/nav2_bringup/share/nav2_bringup/local_setup.sh
+/home/aliihsan/robot_ws/install/nav2_bringup/share/nav2_bringup/local_setup.zsh
+/home/aliihsan/robot_ws/install/nav2_bringup/share/nav2_bringup/local_setup.dsv
+/home/aliihsan/robot_ws/install/nav2_bringup/share/nav2_bringup/package.dsv
+/home/aliihsan/robot_ws/install/nav2_bringup/share/ament_index/resource_index/packages/nav2_bringup
+/home/aliihsan/robot_ws/install/nav2_bringup/share/nav2_bringup/cmake/nav2_bringupConfig.cmake
+/home/aliihsan/robot_ws/install/nav2_bringup/share/nav2_bringup/cmake/nav2_bringupConfig-version.cmake
+/home/aliihsan/robot_ws/install/nav2_bringup/share/nav2_bringup/package.xml

@@ -1,0 +1,27 @@
+[0.965s] Invoking command in '/home/aliihsan/robot_ws/build/nav2_simple_commander': PYTHONPATH=/home/aliihsan/robot_ws/build/nav2_simple_commander/prefix_override:/home/aliihsan/robot_ws/install/nav2_simple_commander/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/aliihsan/robot_ws/build/nav2_simple_commander/build --no-deps install_data
+[1.326s] running develop
+[1.327s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[1.327s]   warnings.warn(
+[1.329s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.329s]   warnings.warn(
+[1.609s] running egg_info
+[1.609s] creating nav2_simple_commander.egg-info
+[1.610s] writing nav2_simple_commander.egg-info/PKG-INFO
+[1.611s] writing dependency_links to nav2_simple_commander.egg-info/dependency_links.txt
+[1.612s] writing entry points to nav2_simple_commander.egg-info/entry_points.txt
+[1.612s] writing requirements to nav2_simple_commander.egg-info/requires.txt
+[1.612s] writing top-level names to nav2_simple_commander.egg-info/top_level.txt
+[1.612s] writing manifest file 'nav2_simple_commander.egg-info/SOURCES.txt'
+[1.613s] reading manifest file 'nav2_simple_commander.egg-info/SOURCES.txt'
+[1.614s] writing manifest file 'nav2_simple_commander.egg-info/SOURCES.txt'
+[1.616s] running build_ext
+[1.617s] Creating /home/aliihsan/robot_ws/install/nav2_simple_commander/lib/python3.10/site-packages/nav2-simple-commander.egg-link (link to .)
+[1.618s] 
+[1.618s] Installed /home/aliihsan/robot_ws/build/nav2_simple_commander
+[1.619s] running install_data
+[1.619s] creating /home/aliihsan/robot_ws/install/nav2_simple_commander/share/ament_index
+[1.619s] creating /home/aliihsan/robot_ws/install/nav2_simple_commander/share/ament_index/resource_index
+[1.619s] creating /home/aliihsan/robot_ws/install/nav2_simple_commander/share/ament_index/resource_index/packages
+[1.619s] copying resource/nav2_simple_commander -> /home/aliihsan/robot_ws/install/nav2_simple_commander/share/ament_index/resource_index/packages
+[1.619s] copying package.xml -> /home/aliihsan/robot_ws/install/nav2_simple_commander/share/nav2_simple_commander
+[1.657s] Invoked command in '/home/aliihsan/robot_ws/build/nav2_simple_commander' returned '0': PYTHONPATH=/home/aliihsan/robot_ws/build/nav2_simple_commander/prefix_override:/home/aliihsan/robot_ws/install/nav2_simple_commander/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/aliihsan/robot_ws/build/nav2_simple_commander/build --no-deps install_data

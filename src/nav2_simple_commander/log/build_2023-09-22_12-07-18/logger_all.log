@@ -1,0 +1,99 @@
+[0.301s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.301s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7feb62f04b20>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7feb6303fd90>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7feb6303fd90>>)
+[0.329s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.329s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.329s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.329s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.329s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.329s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.329s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/aliihsan/robot_ws/src/nav2_simple_commander'
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.342s] DEBUG:colcon.colcon_core.package_identification:Package '.' with type 'ros.ament_python' and name 'nav2_simple_commander'
+[0.342s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.342s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.342s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.342s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.342s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.363s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.363s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.366s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 4 installed packages in /home/aliihsan/robot_ws/install
+[0.368s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 401 installed packages in /opt/ros/humble
+[0.369s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.439s] WARNING:colcon.colcon_core.package_selection:Some selected packages are already built in one or more underlay workspaces:
+	'nav2_simple_commander' is in: /home/aliihsan/robot_ws/install/nav2_simple_commander, /opt/ros/humble
+If a package in a merged underlay workspace is overridden and it installs headers, then all packages in the overlay must sort their include directories by workspace order. Failure to do so may result in build failures or undefined behavior at run time.
+If the overridden package is used by another package in any underlay, then the overriding package in the overlay must be API and ABI compatible or undefined behavior at run time may occur.
+
+If you understand the risks and want to override a package anyways, add the following to the command line:
+	--allow-overriding nav2_simple_commander
+
+This may be promoted to an error in a future release of colcon-override-check.
+[0.441s] Level 5:colcon.colcon_core.verb:set package 'nav2_simple_commander' build argument 'cmake_args' from command line to 'None'
+[0.441s] Level 5:colcon.colcon_core.verb:set package 'nav2_simple_commander' build argument 'cmake_target' from command line to 'None'
+[0.441s] Level 5:colcon.colcon_core.verb:set package 'nav2_simple_commander' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.441s] Level 5:colcon.colcon_core.verb:set package 'nav2_simple_commander' build argument 'cmake_clean_cache' from command line to 'False'
+[0.441s] Level 5:colcon.colcon_core.verb:set package 'nav2_simple_commander' build argument 'cmake_clean_first' from command line to 'False'
+[0.441s] Level 5:colcon.colcon_core.verb:set package 'nav2_simple_commander' build argument 'cmake_force_configure' from command line to 'False'
+[0.441s] Level 5:colcon.colcon_core.verb:set package 'nav2_simple_commander' build argument 'ament_cmake_args' from command line to 'None'
+[0.441s] Level 5:colcon.colcon_core.verb:set package 'nav2_simple_commander' build argument 'catkin_cmake_args' from command line to 'None'
+[0.441s] Level 5:colcon.colcon_core.verb:set package 'nav2_simple_commander' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.441s] DEBUG:colcon.colcon_core.verb:Building package 'nav2_simple_commander' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/aliihsan/robot_ws/src/nav2_simple_commander/build/nav2_simple_commander', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/aliihsan/robot_ws/src/nav2_simple_commander/install/nav2_simple_commander', 'merge_install': False, 'path': '/home/aliihsan/robot_ws/src/nav2_simple_commander', 'symlink_install': False, 'test_result_base': None}
+[0.441s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.444s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.445s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/aliihsan/robot_ws/src/nav2_simple_commander' with build type 'ament_python'
+[0.445s] Level 1:colcon.colcon_core.shell:create_environment_hook('nav2_simple_commander', 'ament_prefix_path')
+[0.449s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.449s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aliihsan/robot_ws/src/nav2_simple_commander/install/nav2_simple_commander/share/nav2_simple_commander/hook/ament_prefix_path.ps1'
+[0.450s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/aliihsan/robot_ws/src/nav2_simple_commander/install/nav2_simple_commander/share/nav2_simple_commander/hook/ament_prefix_path.dsv'
+[0.450s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aliihsan/robot_ws/src/nav2_simple_commander/install/nav2_simple_commander/share/nav2_simple_commander/hook/ament_prefix_path.sh'
+[0.452s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.452s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.699s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/aliihsan/robot_ws/src/nav2_simple_commander'
+[0.700s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.700s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.053s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/aliihsan/robot_ws/src/nav2_simple_commander': PYTHONPATH=/home/aliihsan/robot_ws/src/nav2_simple_commander/build/nav2_simple_commander/prefix_override:/home/aliihsan/robot_ws/src/nav2_simple_commander/install/nav2_simple_commander/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base build/nav2_simple_commander build --build-base /home/aliihsan/robot_ws/src/nav2_simple_commander/build/nav2_simple_commander/build install --record /home/aliihsan/robot_ws/src/nav2_simple_commander/build/nav2_simple_commander/install.log --single-version-externally-managed
+[1.332s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/aliihsan/robot_ws/src/nav2_simple_commander' returned '0': PYTHONPATH=/home/aliihsan/robot_ws/src/nav2_simple_commander/build/nav2_simple_commander/prefix_override:/home/aliihsan/robot_ws/src/nav2_simple_commander/install/nav2_simple_commander/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base build/nav2_simple_commander build --build-base /home/aliihsan/robot_ws/src/nav2_simple_commander/build/nav2_simple_commander/build install --record /home/aliihsan/robot_ws/src/nav2_simple_commander/build/nav2_simple_commander/install.log --single-version-externally-managed
+[1.335s] Level 1:colcon.colcon_core.environment:checking '/home/aliihsan/robot_ws/src/nav2_simple_commander/install/nav2_simple_commander' for CMake module files
+[1.336s] Level 1:colcon.colcon_core.environment:checking '/home/aliihsan/robot_ws/src/nav2_simple_commander/install/nav2_simple_commander' for CMake config files
+[1.336s] Level 1:colcon.colcon_core.environment:checking '/home/aliihsan/robot_ws/src/nav2_simple_commander/install/nav2_simple_commander/lib'
+[1.336s] Level 1:colcon.colcon_core.environment:checking '/home/aliihsan/robot_ws/src/nav2_simple_commander/install/nav2_simple_commander/bin'
+[1.336s] Level 1:colcon.colcon_core.environment:checking '/home/aliihsan/robot_ws/src/nav2_simple_commander/install/nav2_simple_commander/lib/pkgconfig/nav2_simple_commander.pc'
+[1.337s] Level 1:colcon.colcon_core.environment:checking '/home/aliihsan/robot_ws/src/nav2_simple_commander/install/nav2_simple_commander/lib/python3.10/site-packages'
+[1.337s] Level 1:colcon.colcon_core.shell:create_environment_hook('nav2_simple_commander', 'pythonpath')
+[1.338s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aliihsan/robot_ws/src/nav2_simple_commander/install/nav2_simple_commander/share/nav2_simple_commander/hook/pythonpath.ps1'
+[1.338s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/aliihsan/robot_ws/src/nav2_simple_commander/install/nav2_simple_commander/share/nav2_simple_commander/hook/pythonpath.dsv'
+[1.338s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aliihsan/robot_ws/src/nav2_simple_commander/install/nav2_simple_commander/share/nav2_simple_commander/hook/pythonpath.sh'
+[1.339s] Level 1:colcon.colcon_core.environment:checking '/home/aliihsan/robot_ws/src/nav2_simple_commander/install/nav2_simple_commander/bin'
+[1.339s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(nav2_simple_commander)
+[1.340s] INFO:colcon.colcon_core.shell:Creating package script '/home/aliihsan/robot_ws/src/nav2_simple_commander/install/nav2_simple_commander/share/nav2_simple_commander/package.ps1'
+[1.341s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/aliihsan/robot_ws/src/nav2_simple_commander/install/nav2_simple_commander/share/nav2_simple_commander/package.dsv'
+[1.341s] INFO:colcon.colcon_core.shell:Creating package script '/home/aliihsan/robot_ws/src/nav2_simple_commander/install/nav2_simple_commander/share/nav2_simple_commander/package.sh'
+[1.342s] INFO:colcon.colcon_core.shell:Creating package script '/home/aliihsan/robot_ws/src/nav2_simple_commander/install/nav2_simple_commander/share/nav2_simple_commander/package.bash'
+[1.342s] INFO:colcon.colcon_core.shell:Creating package script '/home/aliihsan/robot_ws/src/nav2_simple_commander/install/nav2_simple_commander/share/nav2_simple_commander/package.zsh'
+[1.343s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/aliihsan/robot_ws/src/nav2_simple_commander/install/nav2_simple_commander/share/colcon-core/packages/nav2_simple_commander)
+[1.343s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.343s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.343s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[1.343s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.348s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.348s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.348s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.359s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.360s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/aliihsan/robot_ws/src/nav2_simple_commander/install/local_setup.ps1'
+[1.361s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/aliihsan/robot_ws/src/nav2_simple_commander/install/_local_setup_util_ps1.py'
+[1.362s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/aliihsan/robot_ws/src/nav2_simple_commander/install/setup.ps1'
+[1.364s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/aliihsan/robot_ws/src/nav2_simple_commander/install/local_setup.sh'
+[1.364s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/aliihsan/robot_ws/src/nav2_simple_commander/install/_local_setup_util_sh.py'
+[1.365s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/aliihsan/robot_ws/src/nav2_simple_commander/install/setup.sh'
+[1.366s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/aliihsan/robot_ws/src/nav2_simple_commander/install/local_setup.bash'
+[1.367s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/aliihsan/robot_ws/src/nav2_simple_commander/install/setup.bash'
+[1.368s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/aliihsan/robot_ws/src/nav2_simple_commander/install/local_setup.zsh'
+[1.368s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/aliihsan/robot_ws/src/nav2_simple_commander/install/setup.zsh'

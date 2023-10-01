@@ -1,0 +1,4 @@
+Invoking command in '/home/aliihsan/robot_ws/build/multi_robot_arm': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/aliihsan/robot_ws/build/multi_robot_arm -- -j8 -l8
+Invoked command in '/home/aliihsan/robot_ws/build/multi_robot_arm' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/aliihsan/robot_ws/build/multi_robot_arm -- -j8 -l8
+Invoking command in '/home/aliihsan/robot_ws/build/multi_robot_arm': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/aliihsan/robot_ws/build/multi_robot_arm
+Invoked command in '/home/aliihsan/robot_ws/build/multi_robot_arm' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/aliihsan/robot_ws/build/multi_robot_arm

@@ -228,7 +228,7 @@ def generate_launch_description():
 
     demo_cmd = Node(
         package='nav2_simple_commander',
-        executable='example_follow_path',
+        executable='example_waypoint_follower',
         emulate_tty=True,
         output='screen')
 

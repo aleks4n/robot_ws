@@ -1,4 +1,7 @@
 /home/aliihsan/robot_ws/install/nav2_bringup/share/nav2_bringup/launch/bringup_launch.py
+/home/aliihsan/robot_ws/install/nav2_bringup/share/nav2_bringup/launch/localization_launch.py
+/home/aliihsan/robot_ws/install/nav2_bringup/share/nav2_bringup/launch/navigation_launch.py
+/home/aliihsan/robot_ws/install/nav2_bringup/share/nav2_bringup/launch/slam_launch.py
 /home/aliihsan/robot_ws/install/nav2_bringup/share/ament_index/resource_index/package_run_dependencies/nav2_bringup
 /home/aliihsan/robot_ws/install/nav2_bringup/share/ament_index/resource_index/parent_prefix_path/nav2_bringup
 /home/aliihsan/robot_ws/install/nav2_bringup/share/nav2_bringup/environment/ament_prefix_path.sh

@@ -10,6 +10,8 @@ setup.py
 ../../build/nav2_simple_commander/nav2_simple_commander.egg-info/zip-safe
 nav2_simple_commander/__init__.py
 nav2_simple_commander/example_follow_path.py
+nav2_simple_commander/example_waypoint_follower.py
+nav2_simple_commander/robot_navigator.py
 nav2_simple_commander.egg-info/PKG-INFO
 nav2_simple_commander.egg-info/SOURCES.txt
 nav2_simple_commander.egg-info/dependency_links.txt

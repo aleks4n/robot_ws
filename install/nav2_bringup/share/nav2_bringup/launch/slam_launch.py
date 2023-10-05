@@ -1,0 +1,1 @@
+/home/aliihsan/robot_ws/src/nav2_bringup/launch/slam_launch.py

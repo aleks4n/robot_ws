@@ -20,7 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'example_follow_path = nav2_simple_commander.example_follow_path:main'
+            'example_follow_path = nav2_simple_commander.example_follow_path:main',
+            'example_waypoint_follower = nav2_simple_commander.example_waypoint_follower:main',
         ],
     },
 )

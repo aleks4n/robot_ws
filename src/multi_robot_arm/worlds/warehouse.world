@@ -181,15 +181,15 @@
       <pose>-0.175244 -5.94885 0 0 -0 0</pose>
     </model>
     <state world_name='default'>
-      <sim_time>1156 114000000</sim_time>
-      <real_time>287 917523036</real_time>
-      <wall_time>1695220701 804900372</wall_time>
-      <iterations>285931</iterations>
+      <sim_time>1714 76000000</sim_time>
+      <real_time>561 882427472</real_time>
+      <wall_time>1696521337 720579624</wall_time>
+      <iterations>557962</iterations>
       <model name='asphalt_plane'>
-        <pose>0.253922 0.048964 0 0 -0 0</pose>
+        <pose>0.241232 0.208844 -0 0 -0 0.022466</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>0.253922 0.048964 0 0 -0 0</pose>
+          <pose>0.241232 0.208844 -0 0 -0 0.022466</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -265,14 +265,44 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='person_walking'>
-        <pose>-5.82935 -0.105235 0.05 -1e-06 0 0.025113</pose>
+      <model name='number1'>
+        <pose>2.07924 4.01767 0.4 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>-5.82935 -0.105235 0.05 -1e-06 0 0.025113</pose>
+          <pose>2.07924 4.01767 0.4 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-1.05079 -3.52236 2.40754 -2.62229 -1.55377 0.178745</acceleration>
-          <wrench>-84.0633 -281.789 192.604 0 -0 0</wrench>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='number2'>
+        <pose>-3.04817 2.89805 0.4 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-3.04817 2.89805 0.4 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='number3'>
+        <pose>3.05261 -3.18783 0.4 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>3.05261 -3.18783 0.4 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='person_walking'>
+        <pose>-5.82912 -0.105219 0.050001 2e-06 -1e-06 0.028829</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-5.82912 -0.105219 0.050001 2e-06 -1e-06 0.028829</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-0.942612 1.85116 -3.27159 -1.87938 -1.00655 -0.083066</acceleration>
+          <wrench>-75.409 148.093 -261.727 0 -0 0</wrench>
         </link>
       </model>
       <model name='rwthlogo'>
@@ -301,8 +331,8 @@
         <link name='link'>
           <pose>2.07986 4.15109 0.550002 -4e-06 -0 0.032775</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0.183082 -5.4833 -0.65614 -1.60012 0.366787 -0.001948</acceleration>
-          <wrench>0.183082 -5.4833 -0.65614 0 -0 0</wrench>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='unitboxblue'>
@@ -311,21 +341,19 @@
         <link name='link'>
           <pose>-3.00003 3.00113 0.550002 -4e-06 -0 -0.001763</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-0.001545 -5.48595 -0.656858 -1.59488 -0.004158 -0.002402</acceleration>
-          <wrench>-0.001545 -5.48595 -0.656858 0 -0 0</wrench>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='unitboxgreen'>
-        <static>1</static> 
-        <pose>3.01907 -3.04284 0.549999 -5e-06 4e-06 0.30545</pose>
+        <pose>3.01907 -3.04284 0.549999 -6e-06 3e-06 0.094034</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>3.01907 -3.04284 0.549999 -5e-06 4e-06 0.30545</pose>
+          <pose>3.01907 -3.04284 0.549999 -6e-06 3e-06 0.094034</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-3.35442 1.74673 -5.34312 2.7925 -0.426112 0.002261</acceleration>
-          <wrench>-3.35442 1.74673 -5.34312 0 -0 0</wrench>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
         </link>
-        
       </model>
       <model name='warehouse_robot'>
         <pose>8.38863 8.39581 0 0 -0 0</pose>
@@ -408,13 +436,13 @@
         </link>
       </model>
       <model name='wood_cube_10cm'>
-        <pose>7.32644 8.09532 0.048987 0 -0 0</pose>
+        <pose>4.58227 -3.26625 0.048987 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>7.32644 8.09532 0.098987 0 -0 0</pose>
+          <pose>4.58227 -3.26625 0.098987 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 -0 0 -0 0</acceleration>
-          <wrench>0 0 -0 0 -0 0</wrench>
+          <acceleration>0 -0 -0 0 -0 0</acceleration>
+          <wrench>0 -0 -0 0 -0 0</wrench>
         </link>
       </model>
       <model name='wood_cube_10cm_clone'>
@@ -423,8 +451,8 @@
         <link name='link'>
           <pose>7.41055 8.42585 0.098987 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 -0 0 0 -0 0</acceleration>
-          <wrench>0 -0 0 0 -0 0</wrench>
+          <acceleration>0 -0 -0 0 -0 0</acceleration>
+          <wrench>0 -0 -0 0 -0 0</wrench>
         </link>
       </model>
       <model name='wood_cube_10cm_clone_0'>
@@ -433,8 +461,8 @@
         <link name='link'>
           <pose>7.373 8.73497 0.098987 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 -0 0 0 -0 0</acceleration>
-          <wrench>0 -0 0 0 -0 0</wrench>
+          <acceleration>0 -0 -0 0 -0 0</acceleration>
+          <wrench>0 -0 -0 0 -0 0</wrench>
         </link>
       </model>
       <model name='wood_cube_10cm_clone_1'>
@@ -443,8 +471,8 @@
         <link name='link'>
           <pose>6.96372 8.67486 0.098987 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 -0 0 0 -0 0</acceleration>
-          <wrench>0 -0 0 0 -0 0</wrench>
+          <acceleration>0 -0 -0 0 -0 0</acceleration>
+          <wrench>0 -0 -0 0 -0 0</wrench>
         </link>
       </model>
       <model name='wood_cube_10cm_clone_2'>
@@ -453,15 +481,25 @@
         <link name='link'>
           <pose>6.96556 8.34309 0.098987 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 -0 0 0 -0 0</acceleration>
-          <wrench>0 -0 0 0 -0 0</wrench>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='wood_cube_10cm_clone_3'>
-        <pose>6.95539 8.05703 0.048987 0 -0 0</pose>
+        <pose>2.16171 2.95346 0.048987 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>6.95539 8.05703 0.098987 0 -0 0</pose>
+          <pose>2.16171 2.95346 0.098987 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='wood_cube_10cm_clone_3_clone'>
+        <pose>-2.94932 1.80509 0.048987 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-2.94932 1.80509 0.098987 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 -0 0 -0 0</acceleration>
           <wrench>0 0 -0 0 -0 0</wrench>
@@ -2048,7 +2086,7 @@
     </model>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose>5.09217 -15.01 12.1498 0 0.550081 1.68602</pose>
+        <pose>1.60782 -12.78 5.96659 0 0.278081 1.61002</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>
@@ -2252,6 +2290,139 @@
         <kinematic>0</kinematic>
       </link>
       <pose>13.7026 7.7017 0 0 -0 0</pose>
+    </model>
+    <model name='number1'>
+      <pose>2.07924 4.01767 0.4 0 -0 0</pose>
+      <static>1</static>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://number1/meshes/number.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://number1/materials/scripts</uri>
+              <uri>model://number1/materials/textures</uri>
+              <name>Number/One</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='number2'>
+      <pose>-3.04817 2.89805 0.4 0 -0 0</pose>
+      <static>1</static>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://number1/meshes/number.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://number2/materials/scripts</uri>
+              <uri>model://number2/materials/textures</uri>
+              <name>Number/Two</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='number3'>
+      <pose>3.05261 -3.18783 0.4 0 -0 0</pose>
+      <static>1</static>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://number1/meshes/number.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://number3/materials/scripts</uri>
+              <uri>model://number3/materials/textures</uri>
+              <name>Number/Three</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='wood_cube_10cm_clone_3_clone'>
+      <link name='link'>
+        <pose>0 0 0.05 0 -0 0</pose>
+        <inertial>
+          <mass>0.5167</mass>
+          <inertia>
+            <ixx>0.000861167</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.000861167</iyy>
+            <iyz>0</iyz>
+            <izz>0.000861167</izz>
+          </inertia>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+          <surface>
+            <contact>
+              <poissons_ratio>0.347</poissons_ratio>
+              <elastic_modulus>8.8e+09</elastic_modulus>
+              <ode>
+                <kp>100000</kp>
+                <kd>100</kd>
+                <max_vel>100</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <friction>
+              <torsional>
+                <coefficient>1</coefficient>
+                <use_patch_radius>0</use_patch_radius>
+                <surface_radius>0.01</surface_radius>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Wood</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>-2.94932 1.80509 0.048987 0 -0 0</pose>
     </model>
   </world>
 </sdf>

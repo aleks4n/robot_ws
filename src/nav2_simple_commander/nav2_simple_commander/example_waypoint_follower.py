@@ -17,6 +17,8 @@ from geometry_msgs.msg import PoseStamped
 from nav2_simple_commander.robot_navigator import BasicNavigator, TaskResult
 import rclpy
 from rclpy.duration import Duration
+from time import sleep
+
 
 """
 Basic navigation demo to go to poses.
@@ -59,8 +61,8 @@ def main():
     goal_pose1 = PoseStamped()
     goal_pose1.header.frame_id = 'map'
     goal_pose1.header.stamp = navigator.get_clock().now().to_msg()
-    goal_pose1.pose.position.x = 8.3
-    goal_pose1.pose.position.y = 8.3
+    goal_pose1.pose.position.x = 7.3
+    goal_pose1.pose.position.y = 7.3
     goal_pose1.pose.orientation.w = 0.707
     goal_pose1.pose.orientation.z = 0.707
     goal_poses.append(goal_pose1)
@@ -69,16 +71,16 @@ def main():
     goal_pose2 = PoseStamped()
     goal_pose2.header.frame_id = 'map'
     goal_pose2.header.stamp = navigator.get_clock().now().to_msg()
-    goal_pose2.pose.position.x = 1.5
-    goal_pose2.pose.position.y = -3.75
+    goal_pose2.pose.position.x = 2.1
+    goal_pose2.pose.position.y = 2.5
     goal_pose2.pose.orientation.w = 0.707
     goal_pose2.pose.orientation.z = 0.707
     goal_poses.append(goal_pose2)
     goal_pose3 = PoseStamped()
     goal_pose3.header.frame_id = 'map'
     goal_pose3.header.stamp = navigator.get_clock().now().to_msg()
-    goal_pose3.pose.position.x = -3.6
-    goal_pose3.pose.position.y = -4.75
+    goal_pose3.pose.position.x = 4.5
+    goal_pose3.pose.position.y = -3.2
     goal_pose3.pose.orientation.w = 0.707
     goal_pose3.pose.orientation.z = 0.707
     goal_poses.append(goal_pose3)
@@ -100,9 +102,12 @@ def main():
         # Do something with the feedback
         i = i + 1
         feedback = navigator.getFeedback()
+
         if feedback and i % 5 == 0:
+            
             print('Executing current waypoint: ' +
                   str(feedback.current_waypoint + 1) + '/' + str(len(goal_poses)))
+            current=feedback.current_waypoint
             now = navigator.get_clock().now()
 
             # Some navigation timeout to demo cancellation
@@ -110,7 +115,7 @@ def main():
                 navigator.cancelTask()
 
             # Some follow waypoints request change to demo preemption
-            if now - nav_start > Duration(seconds=35.0):
+            if now - nav_start > Duration(seconds=500.0):
                 goal_pose4 = PoseStamped()
                 goal_pose4.header.frame_id = 'map'
                 goal_pose4.header.stamp = now.to_msg()
@@ -121,11 +126,15 @@ def main():
                 goal_poses = [goal_pose4]
                 nav_start = now
                 navigator.followWaypoints(goal_poses)
+        
+
+
 
     # Do something depending on the return code
     result = navigator.getResult()
     if result == TaskResult.SUCCEEDED:
         print('Goal succeeded!')
+        
     elif result == TaskResult.CANCELED:
         print('Goal was canceled!')
     elif result == TaskResult.FAILED:

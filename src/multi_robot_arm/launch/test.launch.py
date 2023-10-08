@@ -37,7 +37,7 @@ def generate_launch_description():
     package_path = get_package_share_directory("multi_robot_arm")
     robot_desc_path = os.path.join(get_package_share_directory("multi_robot_arm"), "urdf", "bcr_bot.xacro")
     xacro_path = os.path.join(get_package_share_directory('multi_robot_arm'),'urdf','bcr_bot.xacro')
-    xacro_path1 = os.path.join(get_package_share_directory('multi_robot_arm'),'urdf','logotest.xacro')
+    xacro_path1 = os.path.join(get_package_share_directory('multi_robot_arm'),'urdf','logotestsingle.xacro')
     urdf_path1 = os.path.join(get_package_share_directory('multi_robot_arm'),'urdf','bcr_bot.xacro')
     camera_enabled = LaunchConfiguration("camera_enabled", default=False)
     two_d_lidar_enabled = LaunchConfiguration("two_d_lidar_enabled", default=False)

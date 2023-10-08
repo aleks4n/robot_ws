@@ -31,13 +31,15 @@ from launch.launch_description_sources import PythonLaunchDescriptionSource
 
 def generate_launch_description():
     
-    robotname1 = "bot1"
-    robotname2 = "bot2"
+            
+    entity_name_1 = "bot1"
+    entity_name_2 = "bot2"
     
     package_path = get_package_share_directory("multi_robot_arm")
     robot_desc_path = os.path.join(get_package_share_directory("multi_robot_arm"), "urdf", "bcr_bot.xacro")
     xacro_path = os.path.join(get_package_share_directory('multi_robot_arm'),'urdf','bcr_bot.xacro')
     xacro_path1 = os.path.join(get_package_share_directory('multi_robot_arm'),'urdf','logotest.xacro')
+    xacro_path2 = os.path.join(get_package_share_directory('multi_robot_arm'),'urdf','logotest1.xacro')
     urdf_path1 = os.path.join(get_package_share_directory('multi_robot_arm'),'urdf','bcr_bot.xacro')
     camera_enabled = LaunchConfiguration("camera_enabled", default=False)
     two_d_lidar_enabled = LaunchConfiguration("two_d_lidar_enabled", default=False)
@@ -108,31 +110,8 @@ def generate_launch_description():
     )
     gazebo_client = ExecuteProcess(cmd=["gzclient"], output="screen")
 
-    spawn_robot1 = Node(
-        package='gazebo_ros', 
-        executable='spawn_entity.py', 
-        arguments=[
-        '-entity', name1, 
-        '-file', urdf_path1, 
-        '-x', '5.0', 
-        '-y', '2.5', 
-        '-z', '0.51',
-        '-robot_namespace', name1,
-    ],
-    output='screen'
-  )
-  
-    robot_state_publisher1 = Node(
-        package='robot_state_publisher',
-        executable='robot_state_publisher',
-        name='robot_state_publisher',
-        namespace=name1,
-        output='screen',
-        parameters=[{'frame_prefix': name1 + '/',
-                    'use_sim_time': True,
-                    'robot_description': robot_desc}]
-    )
 
+  
 
 
 
@@ -141,43 +120,81 @@ def generate_launch_description():
     os.environ["GAZEBO_MODEL_PATH"] = gazebo_models_path
 
 
+    robot_state_publisher1 = Node(
+            package='robot_state_publisher',
+            executable='robot_state_publisher',
+            name='robot_state_publisher',
+            namespace=entity_name_1,
+            parameters=[{'frame_prefix': entity_name_1+'/', 
+                         'use_sim_time': use_sim_time, 
+                         'robot_description': Command(['xacro ', xacro_path1, 
+                                                       ' robot_name:=', entity_name_1,
+                                                       ' sim_gazebo:=', "true",
+                                                       ' odometry_source:=', "world",
+                                                       ' robot_namespace:=', entity_name_1])}],
+            output="screen"
+        )
 
 
 
-    robot_state_publisher = Node(
-        package='robot_state_publisher',
-        executable='robot_state_publisher',
-        name='robot_state_publisher',
-        output='screen',
-        parameters=[{"use_sim_time": use_sim_time},
-                    {'robot_description': Command( \
-                    ['xacro ', xacro_path1,
-                    ' camera_enabled:=', camera_enabled,
-                    ' two_d_lidar_enabled:=', two_d_lidar_enabled,
-                    ' sim_gazebo:=', "true",
-                    ' odometry_source:=', "world",
-                    ' robot_namespace:=', "bir",
-                    ])}],
-        remappings=[
-            ('/joint_states', PythonExpression(['"', "bir", '/joint_states"']))
-        ]
-        
-    )
+ 
 
     # Launch the spawn_entity node to spawn the robot in Gazebo
-    spawn_entity = Node(
+    spawn_entity1 = Node(
         package='gazebo_ros',
         executable='spawn_entity.py',
         output='screen',
         arguments=[
-            '-topic', "/robot_description",
-            '-entity', PythonExpression(['"', "bir", '_robot"']), #default enitity name _bcr_bot
-            '-z', "0.50",
+            '-topic', "bot1/robot_description",
+            '-entity', "bot1", #default enitity name _bcr_bot
+            '-z', "0.25",
             '-x', "0",
             '-y', "0",
             '-Y', "0"
         ]
     )
+
+    robot_state_publisher2 = Node(
+            package='robot_state_publisher',
+            executable='robot_state_publisher',
+            name='robot_state_publisher',
+            namespace=entity_name_2,
+            parameters=[{'frame_prefix': entity_name_2+'/', 
+                         'use_sim_time': use_sim_time, 
+                         'robot_description': Command(['xacro ', xacro_path2,
+                                                       ' robot_name:=', entity_name_2,
+                                                       ' sim_gazebo:=', "true",
+                                                       ' odometry_source:=', "world",
+                                                       ' robot_name:=', entity_name_2])}],
+            output="screen"
+        )
+
+
+
+ 
+
+    # Launch the spawn_entity node to spawn the robot in Gazebo
+    spawn_entity2 = Node(
+        package='gazebo_ros',
+        executable='spawn_entity.py',
+        output='screen',
+        arguments=[
+            '-topic', "bot2/robot_description",
+            '-entity', "bot2", #default enitity name _bcr_bot
+            '-z', "0.25",
+            '-x', "5",
+            '-y', "-4",
+            '-Y', "0"
+        ]
+    )
+
+
+
+
+
+
+
+
 
     joystick = IncludeLaunchDescription(
                 PythonLaunchDescriptionSource([os.path.join(
@@ -210,8 +227,8 @@ def generate_launch_description():
 
     localization = IncludeLaunchDescription(
                 PythonLaunchDescriptionSource([os.path.join(
-                    package_path,'launch','localization_launch.py'
-                )]), launch_arguments={'use_sim_time': 'true'}.items()
+                    package_path,'launch','multi_localization.launch.py'
+                )]) 
     )
 
 
@@ -243,34 +260,14 @@ def generate_launch_description():
     ld.add_action(declare_use_sim_time)
     ld.add_action(gazebo_server)
     ld.add_action(gazebo_client)
+    ld.add_action(robot_state_publisher1)
+    ld.add_action(spawn_entity1)
+    ld.add_action(robot_state_publisher2)
+    ld.add_action(spawn_entity2)
+    ld.add_action(localization)
     
-    
+ 
 
-    robots = [
-            {'name': 'arm1', 'x_pose': '-3.00', 'y_pose': '3.0511', 'z':'1.01','Y':'0.0'},
-            {'name': 'arm2', 'x_pose': '3.00', 'y_pose': '-3.00', 'z':'1.01','Y':'0.0'},
-            {'name': 'arm3', 'x_pose': '2.065', 'y_pose': '4.3', 'z':'1.01','Y':'-3.14'},
-            #{'name': 'arm4', 'x_pose': '1.5', 'y_pose': '1.5',  'z':'10.14','Y':'-3.14'},
-            # …
-            # …
-        ]
-    
-
-    ld.add_action(joystick)
-    ld.add_action(twist_mux)
-    
-    ld.add_action(spawn_entity)
-    ld.add_action(robot_state_publisher)
-
-
-    ld.add_action(slam)
-    ld.add_action(nav2)
-    ld.add_action(localization)   
-
-    ld.add_action(rviz2)
-
-    #ld.add_action(bringup_cmd)
-    ld.add_action(demo_cmd)
 
     #ld.add_action(spawn_robot2)
     #ld.add_action(robot_state_publisher2)

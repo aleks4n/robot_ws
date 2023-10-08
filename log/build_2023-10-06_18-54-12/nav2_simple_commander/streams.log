@@ -1,0 +1,18 @@
+[0.902s] Invoking command in '/home/aliihsan/robot_ws/build/nav2_simple_commander': PYTHONPATH=/home/aliihsan/robot_ws/build/nav2_simple_commander/prefix_override:/home/aliihsan/robot_ws/install/nav2_simple_commander/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/aliihsan/robot_ws/build/nav2_simple_commander/build --no-deps install_data
+[1.233s] running develop
+[1.474s] running egg_info
+[1.475s] writing nav2_simple_commander.egg-info/PKG-INFO
+[1.475s] writing dependency_links to nav2_simple_commander.egg-info/dependency_links.txt
+[1.475s] writing entry points to nav2_simple_commander.egg-info/entry_points.txt
+[1.476s] writing requirements to nav2_simple_commander.egg-info/requires.txt
+[1.476s] writing top-level names to nav2_simple_commander.egg-info/top_level.txt
+[1.479s] reading manifest file 'nav2_simple_commander.egg-info/SOURCES.txt'
+[1.480s] writing manifest file 'nav2_simple_commander.egg-info/SOURCES.txt'
+[1.482s] running build_ext
+[1.483s] Creating /home/aliihsan/robot_ws/install/nav2_simple_commander/lib/python3.10/site-packages/nav2-simple-commander.egg-link (link to .)
+[1.484s] Installing example_follow_path script to /home/aliihsan/robot_ws/install/nav2_simple_commander/lib/nav2_simple_commander
+[1.484s] Installing example_waypoint_follower script to /home/aliihsan/robot_ws/install/nav2_simple_commander/lib/nav2_simple_commander
+[1.485s] 
+[1.485s] Installed /home/aliihsan/robot_ws/build/nav2_simple_commander
+[1.485s] running install_data
+[1.534s] Invoked command in '/home/aliihsan/robot_ws/build/nav2_simple_commander' returned '0': PYTHONPATH=/home/aliihsan/robot_ws/build/nav2_simple_commander/prefix_override:/home/aliihsan/robot_ws/install/nav2_simple_commander/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/aliihsan/robot_ws/build/nav2_simple_commander/build --no-deps install_data

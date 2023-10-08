@@ -196,6 +196,13 @@ def generate_launch_description():
     
 
 
+
+
+
+    #These 3 Code Parts are for slam and navigation
+    
+
+
     slam = IncludeLaunchDescription(
                 PythonLaunchDescriptionSource([os.path.join(
                     package_path,'launch','online_async_launch.py'
@@ -213,6 +220,15 @@ def generate_launch_description():
                     package_path,'launch','localization_launch.py'
                 )]), launch_arguments={'use_sim_time': 'true'}.items()
     )
+
+
+
+
+
+
+
+
+
 
 
     bringup_cmd = IncludeLaunchDescription(
@@ -263,9 +279,20 @@ def generate_launch_description():
     ld.add_action(robot_state_publisher)
 
 
+
+
+
+
+
+
     ld.add_action(slam)
     ld.add_action(nav2)
     ld.add_action(localization)   
+
+
+
+
+
 
     ld.add_action(rviz2)
 
